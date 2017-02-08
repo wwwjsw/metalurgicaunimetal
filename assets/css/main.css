@@ -1,10 +1,10 @@
 h1{
     font-family: 'Raleway', sans-serif;
-    color:#fff;       
+    color:#795548;       
 }
 p{
     font-family: 'Raleway', sans-serif; 
-    color:#fff;   
+    color:#795548;   
     font-size: 22px;
 }
 .notificacao{
@@ -21,5 +21,5 @@ p{
     background: linear-gradient(to right, #0D59FF, #C60DFF); /* Standard syntax */
 }
 .notificacao a{
-    color: #fff;
+    color: #795548;
 }
