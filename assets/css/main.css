@@ -23,3 +23,6 @@ p{
 .notificacao a{
     color: #795548;
 }
+footer a{
+    text-decoration:none;
+}
