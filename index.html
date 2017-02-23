@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=573600582793020";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -19,14 +27,14 @@
     <li class="w3-right w3-hide-small">
       <a href="#Clientes" class="w3-left">Clientes</a>
       <a href="#Sobre" class="w3-left">Sobre</a>
-      <a href="#Contato" class="w3-left w3-margin-right">Contato</a>
+      <a href="#institucional" class="w3-left w3-margin-right">Institucional</a>
     </li>
   </ul>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="assets/img/architect.jpg" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="assets/img/architect.jpg" alt="Grade metálica" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
     <img src="assets/img/logog.png" alt="logo">
   </div>
@@ -133,19 +141,17 @@
     </div>
   </div>
 
-  <!-- Contato Section -->
-  <div class="w3-container w3-padding-32" id="Contato">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Contato</h3>
-    <p>Vamos entrar em contato e falar sobre o nosso próximo projeto.</p>
-    <form action="form.asp" target="_blank">
-      <input class="w3-input" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section" type="text" placeholder="E-mail" required name="E-mail">
-      <input class="w3-input w3-section" type="text" placeholder="Assunto" required name="Assunto">
-      <input class="w3-input w3-section" type="text" placeholder="Mensagem" required name="Mensagem">
-      <button class="w3-btn w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> ENVIAR
-      </button>
-    </form>
+  <!-- institucional Section -->
+  <div class="w3-container w3-padding-32" id="institucional">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Institucional</h3>
+    <div class="w3-col l8 m6 w3-margin-bottom">
+      <video width="618" height="347" controls preload> 
+        <source src="assets/video/video.mp4"></source> 
+      </video>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="fb-page" data-href="https://www.facebook.com/unimetal.com.br" data-tabs="timeline" data-height="347" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/unimetal.com.br" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/unimetal.com.br">Metalurgica Unimetal</a></blockquote></div>
+    </div>
   </div>
   
 <!-- End page content -->
