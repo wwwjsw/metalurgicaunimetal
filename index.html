@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/w3.css">    
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
+<body onload="document.getElementById('infoModal').style.display='block'">
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -158,8 +158,25 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p><a href="tel:+554532261956">(45) 32261956</a></p>
+  <p class="w3-text-light-gray">FIXO <a href="tel:+554532261956">(45)3226-1956</a></p>
+  <p class="w3-text-light-gray">ESCRITÓRIO / PLANTÃO <a href="tel:45999669028">(45)99966-9028</a></p>
+  <p class="w3-text-light-gray">CELSO <a href="tel:45998001607">(45)99800-1607</a></p>
+  <p class="w3-text-light-gray">LAGO <a href="tel:45999241990">(45)99924-1990</a></p>
 </footer>
+
+<!-- The Modal -->
+<div id="infoModal" class="w3-modal w3-center">
+  <div class="w3-modal-content w3-round-large">
+    <div class="w3-container">
+      <span onclick="document.getElementById('infoModal').style.display='none'"
+      class="w3-btn w3-display-topright ">&times;</span>
+      <h1 class="w3-text-black">NOSSOS NOVOS TELEFONES</h1>
+      <p class="w3-text-dark-gray">ESCRITÓRIO / PLANTÃO <a href="tel:45999669028">(45)99966-9028</a></p>
+      <p class="w3-text-dark-gray">CELSO <a href="tel:45998001607">(45)99800-1607</a></p>
+      <p class="w3-text-dark-gray">LAGO <a href="tel:45999241990">(45)99924-1990</a></p>
+    </div>
+  </div>
+</div>
 
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTDQAMBPJr2YdfJvvemiKa3dUz4coVbwI"></script>
