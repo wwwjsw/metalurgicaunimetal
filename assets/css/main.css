@@ -1,0 +1,27 @@
+h1{
+    font-family: 'Raleway', sans-serif;
+    color:#795548;       
+}
+p{
+    font-family: 'Raleway', sans-serif; 
+    color:#795548;   
+}
+.notificacao{
+    width: 80%;
+    margin: 0 auto;
+    margin-top:100px;
+    padding:15px;
+    border-radius: 10px;
+    text-align: center;
+    background: #C60DFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #0D59FF, #C60DFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0D59FF, #C60DFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0D59FF, #C60DFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0D59FF, #C60DFF); /* Standard syntax */
+}
+.notificacao a{
+    color: #795548;
+}
+footer a{
+    text-decoration:none;
+}
