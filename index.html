@@ -38,9 +38,6 @@
 </div>
 <!-- Header -->
 <header style="max-width:1500px;" id="home">
-  <!-- <video width="100%" height="100%" autoplay muted loop> 
-    <source src="assets/video/video_banner.mp4"></source> 
-  </video> -->
   <div
     class="w3-display-container w3-black"
     style="
@@ -50,7 +47,6 @@
       background-repeat: no-repeat;
       background-size: cover;
     ">
-    <!-- <image class="w2-image " style="width: 100%" src="assets/img/banner.jpg"/> -->
   </div>
   <div class="w3-display-middle w3-margin-top w3-center" style="z-index: 1;">
     <img class="w3-image" src="assets/img/logog.png" alt="logo">
@@ -237,37 +233,9 @@
     <p>O trabalho no mercado cascavelence e região nos proporcionou atuações com renomadas empresas em suas construções, abrindo espaço para atuarmos em todo oeste paranaense.</p>
   </div>
 
-  <!-- <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="assets/img/team1.jpg" alt="John" style="width:100%">
-      <h3>Grades de proteção</h3>
-      <p>Toda a segurança que você precisa.</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="assets/img/team2.jpg" alt="Jane" style="width:100%">
-      <h3>Portões Eletricos</h3>
-      <p>Segurança e praticidade unidos.</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="assets/img/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Grades de proteção</h3>
-      <p>Segurança e durabilidade para sua casa.</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="assets/img/team4.jpg" alt="pantografica" style="width:100%">
-      <h3>Pantografica</h3>
-      <p>Ideal para a segurança de crianças e de animais.</p>
-    </div>
-  </div> -->
-
   <!-- institucional Section -->
   <div class="w3-container w3-padding-32" id="institucional">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Institucional</h3>
-    <!-- <div class="w3-col l8 m6 w3-margin-bottom">
-      <video width="618" height="347" controls preload> 
-        <source src="assets/video/video.mp4"></source> 
-      </video>
-    </div> -->
     <div class="w3-col l4 m6 w3-margin-bottom">
       <div class="fb-page" data-href="https://www.facebook.com/unimetal.com.br" data-tabs="timeline" data-height="347" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/unimetal.com.br" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/unimetal.com.br">Metalurgica Unimetal</a></blockquote></div>
     </div>
@@ -277,11 +245,16 @@
 </div>
 
 <!-- Google Map -->
-<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
-
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.4682322338739!2d-53.48476616399555!3d-24.951925655006324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6acdd036bb3%3A0x79f99ef4c6ca6460!2sMetal%C3%BArgica%20Unimetal!5e0!3m2!1sen!2sbr!4v1698206031788!5m2!1sen!2sbr"
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 <!-- Footer -->
-
-
 <footer class="w3-center w3-black w3-padding-16" id="contato">
   <div>
     <img src="assets/img/QrCode.jpg" alt="Coberturas metálicas" style="width:12%">
@@ -295,7 +268,7 @@
 
 <!-- MODAL -->
 <div id="modal_whatsapp" class="w3-modal">
-    <div class="w3-modal-content w3-transparent">
+  <div class="w3-modal-content w3-transparent">
       <header class="w3-container w3-red"> 
         <span onclick="document.getElementById('modal_whatsapp').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
@@ -305,34 +278,8 @@
       </a>
     </div>
   </div>
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTDQAMBPJr2YdfJvvemiKa3dUz4coVbwI"></script>
-<script>
-  document.getElementById('modal_whatsapp').style.display='block'
-</script>
-<script>
-// Google Map Location
-var myCenter = new google.maps.LatLng(-24.9519675,-53.4841376,21);
-
-function initialize() {
-var mapProp = {
-  center: myCenter,
-  zoom: 18,
-  scrollwheel: false,
-  draggable: false,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position: myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+  <script>
+    document.getElementById('modal_whatsapp').style.display='block'
+  </script>
 </body>
 </html>
