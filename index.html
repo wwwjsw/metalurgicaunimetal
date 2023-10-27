@@ -273,13 +273,24 @@
         <span onclick="document.getElementById('modal_whatsapp').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
       </header>
-      <a target="_blank" href="https://api.whatsapp.com/send?phone=5545999669028&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site.+Gostaria+de+fazer+um+or%C3%A7amento">
+      <a id="track_campain" target="_blank" href="https://api.whatsapp.com/send?phone=5545999669028&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site.+Gostaria+de+fazer+um+or%C3%A7amento">
         <img src="./assets/img/banner_wpp.png" srcset="./assets/img/banner_wpp@2x.png 2x, ./assets/img/banner_wpp@3x.png 3x"class="w3-image">
       </a>
     </div>
   </div>
   <script>
-    document.getElementById('modal_whatsapp').style.display='block'
+    // Functions
+    function handleClick(event) {
+      window.location.href = 'https://metalurgicaunimetal.com.br#track_campain_wpp';
+    }
+
+    // Triggers
+    const track_campain_wpp = document.getElementById('track_campain');
+    const whatsapp_modal = document.getElementById('modal_whatsapp')
+    
+    // Actions
+    track_campain_wpp.addEventListener('click', handleClick);
+    whatsapp_modal.style.display='block'
   </script>
 </body>
 </html>
