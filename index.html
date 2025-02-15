@@ -1,294 +1,667 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1038295806"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-1038295806');
-    </script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body onload="document.getElementById('infoModal').style.display='block'">
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=573600582793020";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-1038295806"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-<!-- Navbar -->
-<div class="">
-  <div class="w3-bar w3-red">
-    <a href="#Clientes" class="w3-bar-item w3-button w3-border-right">Clientes</a>
-    <a href="#Sobre" class="w3-bar-item w3-button w3-border-right">Sobre</a>
-    <a href="#institucional" class="w3-bar-item w3-button w3-border-right">Institucional</a>
-    <a href="#contato" class="w3-bar-item w3-button w3-border-right">Contato</a>
-  </div>
-</div>
-<!-- Header -->
-<header id="home">
-  <div
-    class="w3-display-container w3-black"
-    style="
-      height: 100vh;
-      background-image: url('assets/img/banner.jpg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    ">
-  </div>
-  <div class="w3-display-middle w3-margin-top w3-center" style="z-index: 1;">
-    <img class="w3-image" src="assets/img/logog.png" alt="logo">
-  </div>
-</header>
+            gtag("config", "AW-1038295806");
+        </script>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="src/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <!-- Facebook plugin setup -->
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                var js,
+                    fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src =
+                    "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=573600582793020";
+                fjs.parentNode.insertBefore(js, fjs);
+            })(document, "script", "facebook-jssdk");
+        </script>
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+        <!-- Navbar -->
+        <nav class="bg-white border-b shadow-sm fixed w-full z-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-4">
+                        <!-- Logo -->
+                        <div class="flex items-center py-5 px-2">
+                            <img
+                                src="assets/img/logog.png"
+                                alt="Unimetal Logo"
+                                class="h-8"
+                            />
+                        </div>
 
-  <!-- Section -->
-  <div class="w3-container w3-padding-32" id="Clientes">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Clientes</h3>
-  </div>
+                        <!-- Primary Nav -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a
+                                href="#Clientes"
+                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
+                                >Clientes</a
+                            >
+                            <a
+                                href="#Sobre"
+                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
+                                >Sobre</a
+                            >
+                            <a
+                                href="#institucional"
+                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
+                                >Institucional</a
+                            >
+                            <a
+                                href="#contato"
+                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
+                                >Contato</a
+                            >
+                        </div>
+                    </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Bob's.</div>
-        <img src="assets/img/house1.jpg" alt="Bob's" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Chilli Beans</div>
-        <img src="assets/img/house2.jpg" alt="Chilli Beans" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">tennyx</div>
-        <img src="assets/img/house3.jpg" alt="tennyx" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Gold Calçados</div>
-        <img src="assets/img/house4.jpg" alt="Gold Calçados" style="width:100%">
-      </div>
-    </div>
-  </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button" aria-label="Menu">
+                            <svg
+                                class="w-6 h-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Mezanino</div>
-        <img src="assets/img/mezanino.png" alt="Mezanino" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Fachada de loja</div>
-        <img src="assets/img/sacada.png" alt="Fachada" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">La bodeguita</div>
-        <img src="assets/img/faxadaloja.png" alt="Fachada" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Porta de enrolar eletrônica</div>
-        <img src="assets/img/portao.png" alt="Porta de enrolar" style="width:100%">
-      </div>
-    </div>
-  </div>
-  
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Autódromo de Cascavel</div>
-        <img src="assets/img/house5.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Domicílio</div>
-        <img src="assets/img/house6.jpg" alt="Domicílio" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Denise Calçados</div>
-        <img src="assets/img/house7.jpg" alt="Denise Calçados" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Coberturas metálicas</div>
-        <img src="assets/img/house8.jpg" alt="Coberturas metálicas" style="width:99%">
-      </div>
-    </div>
-  </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <a
+                    href="#Clientes"
+                    class="block py-2 px-4 text-sm hover:bg-gray-200"
+                    >Clientes</a
+                >
+                <a
+                    href="#Sobre"
+                    class="block py-2 px-4 text-sm hover:bg-gray-200"
+                    >Sobre</a
+                >
+                <a
+                    href="#institucional"
+                    class="block py-2 px-4 text-sm hover:bg-gray-200"
+                    >Institucional</a
+                >
+                <a
+                    href="#contato"
+                    class="block py-2 px-4 text-sm hover:bg-gray-200"
+                    >Contato</a
+                >
+            </div>
+        </nav>
 
-<div class="w3-row-padding">  
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Coberturas metálicas</div>
-      <img src="assets/img/A.png" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Portões</div>
-      <img src="assets/img/B.png" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Coberturas metálicas</div>
-      <img src="assets/img/C.png" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Portões</div>
-      <img src="assets/img/D.png" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-</div>  
+        <!-- Header -->
+        <header id="home" class="relative h-screen">
+            <div
+                class="absolute inset-0 w-full h-full bg-black"
+                style="
+                    background-image: url(&quot;assets/img/banner.jpg&quot;);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                "
+            ></div>
+            <div
+                class="absolute inset-0 flex flex-col items-center justify-center"
+            >
+                <a
+                    href="https://api.whatsapp.com/send?phone=5545999669028"
+                    class="px-8 py-4 mx-4 bg-green-500 text-white rounded-full text-lg font-bold shadow-lg hover:bg-green-600 transition-all duration-300 animate-bounce"
+                    style="animation: bounce 2s infinite"
+                >
+                    Atendimento rápido por WhatsApp, Clique aqui
+                </a>
+            </div>
+        </header>
 
-<div class="w3-row-padding">  
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Grades de Proteção</div>
-      <img src="assets/img/team1.jpg" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Portões Elétricos</div>
-      <img src="assets/img/team2.jpg" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Grades de Proteção</div>
-      <img src="assets/img/team3.jpg" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Pantográfica</div>
-      <img src="assets/img/team4.jpg" alt="Coberturas metálicas" style="width:99%">
-    </div>
-  </div>
-</div>  
+        <!-- Page content -->
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <!-- Section -->
+            <div class="py-8" id="Clientes">
+                <h3
+                    class="text-3xl font-bold border-b border-gray-200 pb-4 mb-8"
+                >
+                    Clientes
+                </h3>
+            </div>
 
-  <div class="w3-container w3-padding-32" id="Clientes">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Veja mais</h3>
-  </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Bob's
+                    </div>
+                    <img
+                        src="assets/img/house1.jpg"
+                        alt="Bob's"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-col l6 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <!-- <div class="w3-display-topleft w3-black w3-padding">Bob's</div>
-        <img src="assets/img/house1.jpg" alt="Bob's" style="width:100%"> -->
-        <video width="98%" height="" autoplay muted loop> 
-          <source src="assets/video/portao.mp4"></source>
-        </video>
-      </div>
-    </div>
-    <div class="w3-col l6 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <!-- <div class="w3-display-topleft w3-black w3-padding">Chilli Beans</div>
-        <img src="assets/img/house2.jpg" alt="Chilli Beans" style="width:100%"> -->
-        <video width="100%" height="" autoplay muted loop> 
-          <source src="assets/video/grade.mp4"></source>
-        </video>
-      </div>
-    </div>
-  </div>
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Chilli Beans
+                    </div>
+                    <img
+                        src="assets/img/house2.jpg"
+                        alt="Chilli Beans"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
 
-  <!-- Section -->
-  <div class="w3-container w3-padding-32" id="Sobre">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Sobre</h3>
-    <p>A experiência adquirida ao longo desses desses anos faz da Metalúrgica Unimetal uma empresa totalmente voltada à qualidade de seus produtos, investindo no contínuo aprimoramento tecnológico e em programas de qualidade, visando sempre a satisfação total de seus clientes</p>
-    <h3>Fabricamos: </h3>
-    <p>Portas de enrolar automáticas, em chapas micro-perfuradas, vazadas, raiadas e lisas, com vão livre de até nove metros.</p>
-    <p>Estruturas metálicas para qualquer cobertura, com projeto arquitetônico elaborado por engenheiro responsável.</p>
-    <h3>Equipe: </h3>   
-    <p>Contamos com uma equipe habilitada para executar os projetos com qualidade e perfeição.</p>
-    <p>O trabalho no mercado cascavelence e região nos proporcionou atuações com renomadas empresas em suas construções, abrindo espaço para atuarmos em todo oeste paranaense.</p>
-  </div>
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        tennyx
+                    </div>
+                    <img
+                        src="assets/img/house3.jpg"
+                        alt="tennyx"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
 
-  <!-- institucional Section -->
-  <div class="w3-container w3-padding-32" id="institucional">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Institucional</h3>
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <div class="fb-page" data-href="https://www.facebook.com/unimetal.com.br" data-tabs="timeline" data-height="347" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/unimetal.com.br" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/unimetal.com.br">Metalurgica Unimetal</a></blockquote></div>
-    </div>
-  </div>
-  
-<!-- End page content -->
-</div>
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Gold Calçados
+                    </div>
+                    <img
+                        src="assets/img/house4.jpg"
+                        alt="Gold Calçados"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+            </div>
 
-<!-- Google Map -->
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.4682322338739!2d-53.48476616399555!3d-24.951925655006324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6acdd036bb3%3A0x79f99ef4c6ca6460!2sMetal%C3%BArgica%20Unimetal!5e0!3m2!1sen!2sbr!4v1698206031788!5m2!1sen!2sbr"
-  width="100%"
-  height="450"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16" id="contato">
-  <div>
-    <img src="assets/img/QrCode.jpg" alt="Coberturas metálicas" style="width:12%">
-  </div>
-  <p class="w3-text-light-gray">ESCRITÓRIO / PLANTÃO <a href="tel:45999669028">(45)99966-9028</a></p>
-  <p class="w3-text-light-gray">FIXO <a href="tel:+554532261956">(45)3226-1956</a></p>
-</footer>
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
+            >
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Mezanino
+                    </div>
+                    <img
+                        src="assets/img/mezanino.png"
+                        alt="Mezanino"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
 
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Fachada de loja
+                    </div>
+                    <img
+                        src="assets/img/sacada.png"
+                        alt="Fachada"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
 
-<!-- MODAL -->
-<div id="modal_whatsapp" class="w3-modal">
-  <div class="w3-modal-content w3-transparent">
-      <header class="w3-container w3-red"> 
-        <span onclick="document.getElementById('modal_whatsapp').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-      </header>
-      <a id="track_campain" target="_blank" href="https://api.whatsapp.com/send?phone=5545999669028&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site.+Gostaria+de+fazer+um+or%C3%A7amento">
-        <img src="./assets/img/banner_wpp.png" srcset="./assets/img/banner_wpp@2x.png 2x, ./assets/img/banner_wpp@3x.png 3x"class="w3-image">
-      </a>
-    </div>
-  </div>
-  <script>
-    // Functions
-    function handleClick(event) {
-      window.location.href = 'https://metalurgicaunimetal.com.br#track_campain_wpp';
-    }
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        La bodeguita
+                    </div>
+                    <img
+                        src="assets/img/faxadaloja.png"
+                        alt="Fachada"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
 
-    // Triggers
-    const track_campain_wpp = document.getElementById('track_campain');
-    const whatsapp_modal = document.getElementById('modal_whatsapp')
-    
-    // Actions
-    track_campain_wpp.addEventListener('click', handleClick);
-    whatsapp_modal.style.display='block'
-  </script>
-</body>
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Porta de enrolar eletrônica
+                    </div>
+                    <img
+                        src="assets/img/portao.png"
+                        alt="Porta de enrolar"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
+            >
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Autódromo de Cascavel
+                    </div>
+                    <img
+                        src="assets/img/house5.jpg"
+                        alt="House"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Domicílio
+                    </div>
+                    <img
+                        src="assets/img/house6.jpg"
+                        alt="Domicílio"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Denise Calçados
+                    </div>
+                    <img
+                        src="assets/img/house7.jpg"
+                        alt="Denise Calçados"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Coberturas metálicas
+                    </div>
+                    <img
+                        src="assets/img/house8.jpg"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+            </div>
+
+            <!-- Serviços Section -->
+            <div class="py-8" id="Servicos">
+                <h3
+                    class="text-3xl font-bold border-b border-gray-200 pb-4 mb-8"
+                >
+                    Nossos Serviços
+                </h3>
+            </div>
+
+            <div
+                class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            >
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Coberturas metálicas
+                    </div>
+                    <img
+                        src="assets/img/A.png"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Portões
+                    </div>
+                    <img
+                        src="assets/img/B.png"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Coberturas metálicas
+                    </div>
+                    <img
+                        src="assets/img/C.png"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Portões
+                    </div>
+                    <img
+                        src="assets/img/D.png"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+            </div>
+
+            <div
+                class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
+            >
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Grades de Proteção
+                    </div>
+                    <img
+                        src="assets/img/team1.jpg"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Portões Elétricos
+                    </div>
+                    <img
+                        src="assets/img/team2.jpg"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Grades de Proteção
+                    </div>
+                    <img
+                        src="assets/img/team3.jpg"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                >
+                    <div
+                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
+                    >
+                        Pantográfica
+                    </div>
+                    <img
+                        src="assets/img/team4.jpg"
+                        alt="Coberturas metálicas"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-8 py-8" id="Clientes">
+            <h3 class="text-3xl font-bold border-b border-gray-200 pb-4">
+                Veja mais
+            </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+            <div class="mb-6">
+                <div class="relative">
+                    <video class="w-full" autoplay muted loop>
+                        <source
+                            src="assets/video/portao.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
+            </div>
+            <div class="mb-6">
+                <div class="relative">
+                    <video class="w-full" autoplay muted loop>
+                        <source src="assets/video/grade.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section -->
+        <div class="container px-8 py-8" id="Sobre">
+            <h3 class="text-3xl font-bold border-b border-gray-200 pb-4">
+                Sobre
+            </h3>
+            <p class="mt-4">
+                A experiência adquirida ao longo desses desses anos faz da
+                Metalúrgica Unimetal uma empresa totalmente voltada à qualidade
+                de seus produtos, investindo no contínuo aprimoramento
+                tecnológico e em programas de qualidade, visando sempre a
+                satisfação total de seus clientes
+            </p>
+            <h3 class="text-xl font-bold mt-4">Fabricamos:</h3>
+            <p class="mt-2">
+                Portas de enrolar automáticas, em chapas micro-perfuradas,
+                vazadas, raiadas e lisas, com vão livre de até nove metros.
+            </p>
+            <p class="mt-2">
+                Estruturas metálicas para qualquer cobertura, com projeto
+                arquitetônico elaborado por engenheiro responsável.
+            </p>
+            <h3 class="text-xl font-bold mt-4">Equipe:</h3>
+            <p class="mt-2">
+                Contamos com uma equipe habilitada para executar os projetos com
+                qualidade e perfeição.
+            </p>
+            <p class="mt-2">
+                O trabalho no mercado cascavelence e região nos proporcionou
+                atuações com renomadas empresas em suas construções, abrindo
+                espaço para atuarmos em todo oeste paranaense.
+            </p>
+        </div>
+
+        <!-- institucional Section -->
+        <div class="container px-8 py-8" id="institucional">
+            <h3 class="text-3xl font-bold border-b border-gray-200 pb-4">
+                Institucional
+            </h3>
+            <div class="lg:w-1/3 md:w-1/2 mb-6">
+                <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/unimetal.com.br"
+                    data-tabs="timeline"
+                    data-height="347"
+                    data-small-header="true"
+                    data-adapt-container-width="true"
+                    data-hide-cover="true"
+                    data-show-facepile="true"
+                >
+                    <blockquote
+                        cite="https://www.facebook.com/unimetal.com.br"
+                        class="fb-xfbml-parse-ignore"
+                    >
+                        <a href="https://www.facebook.com/unimetal.com.br"
+                            >Metalurgica Unimetal</a
+                        >
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <!-- End page content -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.4682322338739!2d-53.48476616399555!3d-24.951925655006324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6acdd036bb3%3A0x79f99ef4c6ca6460!2sMetal%C3%BArgica%20Unimetal!5e0!3m2!1sen!2sbr!4v1698206031788!5m2!1sen!2sbr"
+            class="w-full h-[450px] border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+
+        <!-- Footer -->
+        <footer class="text-center bg-black py-4" id="contato">
+            <div>
+                <img
+                    src="assets/img/QrCode.jpg"
+                    alt="Coberturas metálicas"
+                    class="w-1/8 mx-auto"
+                />
+            </div>
+            <p class="text-gray-300">
+                ESCRITÓRIO / PLANTÃO
+                <a href="tel:45999669028" class="hover:text-white"
+                    >(45)99966-9028</a
+                >
+            </p>
+            <p class="text-gray-300">
+                FIXO
+                <a href="tel:+554532261956" class="hover:text-white"
+                    >(45)3226-1956</a
+                >
+            </p>
+        </footer>
+
+        <!-- MODAL -->
+        <div
+            id="modal_whatsapp"
+            class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden"
+        >
+            <div class="bg-transparent max-w-sm mx-auto mt-20 w-11/12">
+                <div class="p-2 relative">
+                    <span
+                        onclick="document.getElementById('modal_whatsapp').style.display='none'"
+                        class="absolute top-0 right-0 p-2 cursor-pointer text-white hover:text-gray-200 bg-gray-800 rounded-full w-8 h-8 flex items-center justify-center"
+                        >&times;</span
+                    >
+                </div>
+                <a
+                    id="track_campain"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5545999669028&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site.+Gostaria+de+fazer+um+or%C3%A7amento"
+                >
+                    <img
+                        src="./assets/img/banner_wpp.png"
+                        srcset="
+                            ./assets/img/banner_wpp@2x.png 2x,
+                            ./assets/img/banner_wpp@3x.png 3x
+                        "
+                        class="w-full"
+                        alt="WhatsApp Banner"
+                    />
+                </a>
+            </div>
+        </div>
+        <script>
+            document
+                .querySelector(".mobile-menu-button")
+                .addEventListener("click", function () {
+                    document
+                        .querySelector(".mobile-menu")
+                        .classList.toggle("hidden");
+                });
+        </script>
+        <script>
+            // Functions
+            function handleClick(event) {
+                window.location.href =
+                    "https://metalurgicaunimetal.com.br#track_campain_wpp";
+            }
+
+            // Triggers
+            const track_campain_wpp = document.getElementById("track_campain");
+            const whatsapp_modal = document.getElementById("modal_whatsapp");
+
+            // Actions
+            track_campain_wpp.addEventListener("click", handleClick);
+            whatsapp_modal.style.display = "block";
+        </script>
+    </body>
 </html>
