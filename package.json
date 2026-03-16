@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "dev-server": "npx http-server . -p 3000 -o",
+    "build-css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.6",
     "tailwindcss": "^4.0.6"

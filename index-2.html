@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metalúrgica Unimetal – Portões, Coberturas e Estruturas Metálicas | Cascavel PR</title>
+  <meta name="description" content="Fabricação e instalação de portões elétricos, coberturas metálicas, grades de proteção e estruturas em aço. Cascavel e região oeste do Paraná. Solicite seu orçamento!" />
+
+  <!-- ══════════════════════════════════════════════════════
+       GOOGLE ADS – SUBSTITUIR AW-1038295806 PELO ID REAL
+       Crie as conversões no Google Ads e substitua cada
+       LABEL_ID pelo rótulo gerado (ex: AbCdEfGhI12)
+  ═══════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1038295806"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-1038295806');
+
+    // ─── 1. Clique WhatsApp (conversão principal) ───
+    function trackWhatsApp(origem) {
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WPP', value: 5.0, currency: 'BRL' });
+      gtag('event', 'contact',    { event_category: 'contato', event_label: origem || 'wpp' });
+    }
+
+    // ─── 2. Clique em telefone ───
+    function trackPhone(num) {
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_PHONE', value: 3.0, currency: 'BRL' });
+      gtag('event', 'contact',    { event_category: 'contato', event_label: 'phone_' + num });
+    }
+
+    // ─── 3. Envio do formulário (lead qualificado) ───
+    function trackFormSubmit() {
+      gtag('event', 'conversion',    { send_to: 'AW-1038295806/LABEL_FORM', value: 15.0, currency: 'BRL' });
+      gtag('event', 'generate_lead', { event_category: 'lead', event_label: 'form_orcamento', value: 15.0, currency: 'BRL' });
+    }
+
+    // ─── 4. Visualização/clique em serviço ───
+    function trackServico(nome, acao) {
+      gtag('event', acao === 'click' ? 'select_item' : 'view_item', {
+        event_category: 'servico', event_label: nome,
+        items: [{ item_name: nome, item_category: 'metalurgia' }]
+      });
+    }
+
+    // ─── 5. Usuário chegou até a seção Contato ───
+    function trackReachContact() {
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_REACH_CONTACT' });
+      gtag('event', 'begin_checkout', { event_category: 'intencao', event_label: 'chegou_contato' });
+    }
+
+    // ─── 6. Play de vídeo ───
+    function trackVideo(nome) {
+      gtag('event', 'video_play', { event_category: 'midia', event_label: nome });
+    }
+
+    // ─── 7. Clique em rede social ───
+    function trackSocial(rede) {
+      gtag('event', 'click', { event_category: 'social', event_label: rede });
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --red:#C8171E; --red-d:#9E1117; --red-deep:#6B0A0E;
+      --black:#0d0d0d; --coal:#141414; --iron:#1d1d1d;
+      --steel:#2a2a2a; --dim:#444; --mid:#777;
+      --pale:#aaa; --light:#ddd; --white:#f4f2ef;
+      --ff-h:'Barlow Condensed',sans-serif;
+      --ff-b:'Barlow',sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--light);font-family:var(--ff-b);font-weight:400;line-height:1.65;overflow-x:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+
+    /* ── UTILITÁRIOS ── */
+    .eyebrow{font-family:var(--ff-h);font-size:12px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .eyebrow::before{content:'';width:24px;height:2px;background:var(--red);flex-shrink:0}
+    .sec-title{font-family:var(--ff-h);font-weight:900;font-size:clamp(38px,5.5vw,70px);line-height:.95;text-transform:uppercase;color:var(--white);letter-spacing:1px}
+
+    .btn-red{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;text-decoration:none;font-family:var(--ff-h);font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:15px 30px;border:none;cursor:pointer;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));transition:background .2s,transform .15s}
+    .btn-red:hover{background:var(--red-d);transform:translateY(-2px)}
+    .btn-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--light);text-decoration:none;font-family:var(--ff-h);font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:13px 26px;border:1px solid rgba(255,255,255,.18);cursor:pointer;transition:border-color .2s,color .2s}
+    .btn-ghost:hover{border-color:var(--red);color:var(--red)}
+
+    /* ── NAV ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:rgba(13,13,13,.95);border-bottom:1px solid rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo img{height:36px;width:auto;filter:brightness(0) invert(1)}
+    .nav-logo-txt{font-family:var(--ff-h);font-weight:900;font-size:22px;letter-spacing:3px;color:var(--white)}
+    .nav-logo-txt span{color:var(--red)}
+    .nav-links{display:flex;align-items:center;gap:4px;list-style:none}
+    .nav-links a{text-decoration:none;font-family:var(--ff-h);font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--pale);padding:8px 12px;transition:color .2s}
+    .nav-links a:hover{color:var(--red)}
+    .nav-wpp{background:#25D366!important;color:#fff!important;padding:8px 18px!important;clip-path:polygon(0 0,calc(100% - 7px) 0,100% 7px,100% 100%,7px 100%,0 calc(100% - 7px));transition:background .2s!important}
+    .nav-wpp:hover{background:#1da851!important;color:#fff!important}
+    .hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:5px}
+    .hbg span{display:block;width:24px;height:2px;background:var(--light);transition:all .3s}
+    .hbg.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .hbg.open span:nth-child(2){opacity:0}
+    .hbg.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+    /* ── HERO ── */
+    #hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:68px 5vw 0;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background:linear-gradient(115deg,rgba(13,13,13,.97) 42%,rgba(90,4,8,.75) 100%),url('https://metalurgicaunimetal.com.br/assets/img/house1.jpg') center/cover no-repeat}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}
+    .hero-bar{position:absolute;top:0;left:0;width:5px;height:100%;background:linear-gradient(to bottom,var(--red) 0%,transparent 60%)}
+    .hero-content{position:relative;z-index:2;max-width:700px;padding:80px 0 100px}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,23,30,.12);border:1px solid rgba(200,23,30,.38);color:#ff7070;font-family:var(--ff-h);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:7px 14px;margin-bottom:24px}
+    .hero-dot{width:7px;height:7px;background:var(--red);border-radius:50%;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(1.5)}}
+    .hero-h1{font-family:var(--ff-h);font-weight:900;font-size:clamp(54px,9.5vw,118px);line-height:.92;text-transform:uppercase;color:var(--white);margin-bottom:24px;letter-spacing:1px}
+    .hero-h1 .stroke{-webkit-text-stroke:2px var(--red);color:transparent}
+    .hero-sub{font-size:17px;font-weight:300;color:var(--pale);line-height:1.82;max-width:500px;margin-bottom:40px}
+    .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-stats{position:absolute;right:5vw;bottom:64px;z-index:2;display:flex;gap:2px}
+    .stat{background:rgba(18,18,18,.92);border:1px solid rgba(255,255,255,.07);border-top:2px solid var(--red);padding:22px 28px;text-align:center;min-width:116px}
+    .stat-n{font-family:var(--ff-h);font-weight:900;font-size:42px;line-height:1;color:var(--white)}
+    .stat-n em{color:var(--red);font-style:normal}
+    .stat-l{font-family:var(--ff-h);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-top:5px}
+
+    /* ── STRIP ── */
+    .strip{background:var(--red);padding:16px 5vw;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .strip-txt{font-family:var(--ff-h);font-weight:700;font-size:17px;letter-spacing:1px;text-transform:uppercase;color:#fff}
+    .strip-txt small{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;letter-spacing:0;text-transform:none}
+    .strip-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.22);color:#fff;text-decoration:none;font-family:var(--ff-h);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:10px 20px;border:1px solid rgba(255,255,255,.28);transition:background .2s;white-space:nowrap}
+    .strip-btn:hover{background:rgba(0,0,0,.42)}
+
+    /* ── SERVIÇOS ── */
+    #servicos{padding:108px 5vw;background:var(--coal)}
+    .serv-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+    .serv-intro p{max-width:360px;font-weight:300;color:var(--pale);font-size:15px;line-height:1.85}
+    .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,.05)}
+    .serv-card{background:var(--coal);padding:40px 34px;position:relative;overflow:hidden;cursor:pointer;transition:background .3s}
+    .serv-card::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .38s ease}
+    .serv-card:hover{background:var(--iron)}
+    .serv-card:hover::after{transform:scaleX(1)}
+    .serv-bg-n{position:absolute;top:10px;right:18px;font-family:var(--ff-h);font-weight:900;font-size:76px;color:rgba(255,255,255,.033);line-height:1;pointer-events:none}
+    .serv-ico{width:50px;height:50px;border:1px solid rgba(200,23,30,.32);display:flex;align-items:center;justify-content:center;margin-bottom:22px;color:var(--red);transition:background .3s,border-color .3s}
+    .serv-card:hover .serv-ico{background:rgba(200,23,30,.1);border-color:var(--red)}
+    .serv-name{font-family:var(--ff-h);font-weight:700;font-size:21px;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin-bottom:10px}
+    .serv-desc{font-size:13px;color:var(--pale);line-height:1.78;font-weight:300}
+    .serv-cta{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-family:var(--ff-h);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);text-decoration:none;opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s}
+    .serv-card:hover .serv-cta{opacity:1;transform:translateX(0)}
+
+    /* ── CLIENTES ── */
+    #clientes{padding:108px 5vw;background:var(--black)}
+    .cli-intro{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:52px;gap:28px;flex-wrap:wrap}
+    .cli-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+    .cli-card{position:relative;overflow:hidden;background:var(--iron)}
+    .cli-card.wide{grid-column:span 2}
+    .cli-card.tall{grid-row:span 2}
+    .cli-card img{width:100%;height:100%;min-height:210px;object-fit:cover;filter:grayscale(65%) brightness(.55);transition:filter .5s,transform .6s}
+    .cli-card:hover img{filter:grayscale(0%) brightness(.72);transform:scale(1.06)}
+    .cli-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,.88) 0%,transparent 55%);display:flex;align-items:flex-end;padding:18px}
+    .cli-name{font-family:var(--ff-h);font-weight:700;font-size:17px;letter-spacing:2px;text-transform:uppercase;color:var(--white);transition:color .3s}
+    .cli-card:hover .cli-name{color:var(--red)}
+
+    /* ── SOBRE ── */
+    #sobre{padding:108px 5vw;background:var(--iron);position:relative;overflow:hidden}
+    #sobre::before{content:'UNIMETAL';position:absolute;top:50%;right:-30px;transform:translateY(-50%);font-family:var(--ff-h);font-weight:900;font-size:clamp(70px,14vw,210px);letter-spacing:6px;text-transform:uppercase;color:rgba(255,255,255,.026);pointer-events:none;user-select:none;white-space:nowrap}
+    .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:start;position:relative;z-index:1}
+    .sobre-txt{font-weight:300;font-size:16px;color:var(--pale);line-height:1.9;margin-bottom:18px}
+    .sobre-bullets{margin-top:36px;display:flex;flex-direction:column;gap:0}
+    .b-row{display:flex;align-items:flex-start;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+    .b-row:last-child{border-bottom:none}
+    .b-ico{width:34px;height:34px;background:rgba(200,23,30,.1);border:1px solid rgba(200,23,30,.28);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--red)}
+    .b-title{font-family:var(--ff-h);font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin-bottom:3px}
+    .b-desc{font-size:13px;color:var(--pale);font-weight:300}
+    .sobre-right{display:flex;flex-direction:column;gap:2px}
+    .stat-card{background:var(--charcoal,#141414);border-left:3px solid var(--red);padding:24px 28px;display:flex;align-items:center;gap:20px}
+    .sc-n{font-family:var(--ff-h);font-weight:900;font-size:48px;line-height:1;color:var(--red);flex-shrink:0}
+    .sc-label{font-family:var(--ff-h);font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin-bottom:3px}
+    .sc-desc{font-size:13px;color:var(--mid);font-weight:300}
+
+    /* ── VÍDEOS ── */
+    #videos{padding:90px 5vw;background:var(--coal)}
+    .vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:52px}
+    .vid-wrap{position:relative;background:var(--black);overflow:hidden;cursor:pointer}
+    .vid-wrap video{width:100%;display:block;max-height:340px;object-fit:cover}
+    .vid-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(13,13,13,.48);transition:background .3s}
+    .vid-wrap:hover .vid-overlay{background:rgba(200,23,30,.18)}
+    .vid-wrap.playing .vid-overlay{display:none}
+    .play-btn{width:68px;height:68px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s}
+    .vid-wrap:hover .play-btn{transform:scale(1.1);background:var(--red-d)}
+    .vid-label{position:absolute;bottom:14px;left:18px;font-family:var(--ff-h);font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;color:#fff}
+
+    /* ── CONTATO ── */
+    #contato{padding:108px 5vw;background:var(--black);position:relative}
+    #contato::before{content:'';position:absolute;top:0;left:0;width:45%;height:3px;background:linear-gradient(to right,var(--red),transparent)}
+    .cont-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;margin-top:60px;align-items:start}
+    .cont-left{display:flex;flex-direction:column;gap:0}
+    .cont-item{padding:24px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+    .cont-item:first-child{padding-top:0}
+    .cont-label{font-family:var(--ff-h);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--mid);margin-bottom:7px}
+    .cont-val{font-family:var(--ff-h);font-weight:700;font-size:26px;letter-spacing:1px;color:var(--white);text-decoration:none;display:block;transition:color .2s}
+    .cont-val:hover{color:var(--red)}
+    .cont-sub{font-size:12px;color:var(--mid);margin-top:3px}
+    .wpp-big{display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;text-decoration:none;font-family:var(--ff-h);font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:16px 28px;margin-top:28px;transition:background .2s,transform .15s}
+    .wpp-big:hover{background:#1da851;transform:translateY(-2px)}
+    .qr-row{display:flex;align-items:center;gap:14px;margin-top:20px;padding:18px;background:var(--iron);border:1px solid rgba(255,255,255,.06)}
+    .qr-row img{width:72px;height:72px;flex-shrink:0}
+    .qr-txt{font-size:13px;color:var(--pale);line-height:1.65;font-weight:300}
+    .qr-txt strong{color:var(--white);font-weight:500}
+
+    /* FORM */
+    .form-box{background:var(--coal);border:1px solid rgba(255,255,255,.07);border-top:3px solid var(--red)}
+    .form-head{padding:26px 30px 18px;border-bottom:1px solid rgba(255,255,255,.07)}
+    .form-head-title{font-family:var(--ff-h);font-weight:700;font-size:19px;letter-spacing:2px;text-transform:uppercase;color:var(--white)}
+    .form-head-sub{font-size:13px;color:var(--mid);margin-top:3px}
+    .form-body{padding:0}
+    .form-row{display:grid;grid-template-columns:1fr 1fr}
+    .f-field{border:1px solid rgba(255,255,255,.08);position:relative;margin:-1px 0 0 -1px}
+    .f-field label{position:absolute;top:11px;left:15px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mid);pointer-events:none}
+    .f-field input,.f-field select,.f-field textarea{width:100%;background:transparent;border:none;outline:none;color:var(--light);font-family:var(--ff-b);font-size:14px;padding:34px 15px 12px;resize:none;-webkit-appearance:none;appearance:none}
+    .f-field select option{background:var(--iron);color:var(--light)}
+    .f-field input::placeholder,.f-field textarea::placeholder{color:var(--dim)}
+    .f-field:focus-within{border-color:rgba(200,23,30,.45);z-index:1}
+    .f-field:focus-within label{color:var(--red)}
+    .f-submit{display:flex;margin:-1px 0 0 -1px}
+    .submit-btn{flex:1;background:var(--red);color:#fff;border:none;cursor:pointer;font-family:var(--ff-h);font-weight:800;font-size:17px;letter-spacing:3px;text-transform:uppercase;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;transition:background .2s}
+    .submit-btn:hover{background:var(--red-d)}
+    .form-note{font-size:11px;color:var(--mid);text-align:center;padding:12px 28px;border-top:1px solid rgba(255,255,255,.06)}
+
+    /* ── FOOTER ── */
+    footer{background:var(--coal);border-top:1px solid rgba(255,255,255,.06)}
+    .ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:56px;padding:64px 5vw 52px}
+    .ft-brand{font-family:var(--ff-h);font-weight:900;font-size:26px;letter-spacing:3px;display:block;margin-bottom:16px;color:var(--white)}
+    .ft-brand span{color:var(--red)}
+    .ft-tagline{font-size:13px;font-weight:300;color:var(--mid);line-height:1.85;max-width:270px;margin-bottom:24px}
+    .ft-social a{display:inline-flex;align-items:center;gap:7px;font-family:var(--ff-h);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--pale);text-decoration:none;transition:color .2s}
+    .ft-social a:hover{color:var(--red)}
+    .ft-col-title{font-family:var(--ff-h);font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+    .ft-col-title::before{content:'';width:14px;height:2px;background:var(--red)}
+    .ft-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .ft-list a{text-decoration:none;font-size:13px;color:var(--mid);font-weight:300;transition:color .2s}
+    .ft-list a:hover{color:var(--light)}
+    .ft-bot{border-top:1px solid rgba(255,255,255,.06);padding:18px 5vw;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .ft-copy{font-size:11px;color:var(--mid);letter-spacing:.5px}
+
+    /* ── FLOAT WPP ── */
+    .float-wpp{position:fixed;bottom:22px;right:22px;z-index:300;display:flex;align-items:center;gap:9px;background:#25D366;color:#fff;text-decoration:none;font-family:var(--ff-h);font-weight:700;font-size:13px;letter-spacing:1px;padding:12px 18px 12px 14px;border-radius:100px;box-shadow:0 4px 22px rgba(37,211,102,.32);transition:transform .2s,box-shadow .2s}
+    .float-wpp:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(37,211,102,.5)}
+
+    /* ── REVEAL ── */
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .58s ease,transform .58s ease}
+    .reveal.vis{opacity:1;transform:translateY(0)}
+
+    /* ── HERO ANIMS ── */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+    .hero-badge{animation:fadeUp .5s ease both;animation-delay:.05s}
+    .hero-h1{animation:fadeUp .6s ease both;animation-delay:.15s}
+    .hero-sub{animation:fadeUp .6s ease both;animation-delay:.28s}
+    .hero-ctas{animation:fadeUp .6s ease both;animation-delay:.4s}
+    .hero-stats{animation:fadeUp .6s ease both;animation-delay:.52s}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1024px){
+      .serv-grid{grid-template-columns:repeat(2,1fr)}
+      .cli-grid{grid-template-columns:repeat(2,1fr)}
+      .cli-card.wide{grid-column:span 1}
+      .cli-card.tall{grid-row:span 1}
+      .ft-top{grid-template-columns:1fr 1fr}
+      .ft-top>:first-child{grid-column:span 2}
+    }
+    @media(max-width:768px){
+      .nav-links{display:none}
+      .hbg{display:flex}
+      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:var(--coal);padding:20px 5vw;gap:6px;border-bottom:1px solid rgba(255,255,255,.08);z-index:199}
+      .nav-links.open a{font-size:17px;padding:10px 0}
+      .hero-stats{display:none}
+      .serv-grid{grid-template-columns:1fr}
+      .cli-grid{grid-template-columns:1fr 1fr}
+      .sobre-grid{grid-template-columns:1fr;gap:44px}
+      .vid-grid{grid-template-columns:1fr}
+      .cont-grid{grid-template-columns:1fr;gap:44px}
+      .form-row{grid-template-columns:1fr}
+      .ft-top{grid-template-columns:1fr;gap:36px}
+      .ft-top>:first-child{grid-column:1}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero">
+    <img src="https://metalurgicaunimetal.com.br/assets/img/logog.png" alt="Unimetal"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <div class="nav-logo-txt" style="display:none">UNI<span>METAL</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#clientes">Clientes</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#videos">Vídeos</a></li>
+    <li>
+      <a href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Gostaria%20de%20um%20orçamento."
+         class="nav-wpp" target="_blank" rel="noopener"
+         onclick="trackWhatsApp('nav')">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp
+      </a>
+    </li>
+  </ul>
+  <button class="hbg" id="hbg" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-bar"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><div class="hero-dot"></div>Cascavel, PR · Oeste do Paraná</div>
+    <h1 class="hero-h1">Estruturas<br>em <span class="stroke">Aço</span><br>Sob Medida</h1>
+    <p class="hero-sub">Portões elétricos, coberturas metálicas, grades de proteção e fachadas — fabricação e instalação com engenheiro responsável.</p>
+    <div class="hero-ctas">
+      <a href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Gostaria%20de%20um%20orçamento%20pelo%20site."
+         class="btn-red" target="_blank" rel="noopener"
+         onclick="trackWhatsApp('hero_principal')">
+        <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Solicitar Orçamento
+      </a>
+      <a href="#servicos" class="btn-ghost">Ver Serviços <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-n">30<em>+</em></div><div class="stat-l">Anos de Mercado</div></div>
+    <div class="stat"><div class="stat-n">9<em>m</em></div><div class="stat-l">Vão Livre Máx.</div></div>
+    <div class="stat"><div class="stat-n"><em>100</em>%</div><div class="stat-l">Garantia Qualidade</div></div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-txt">Atendimento rápido pelo WhatsApp <small>Resposta em minutos · Orçamento sem compromisso</small></div>
+  <a href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Vi%20o%20site%20e%20quero%20um%20orçamento."
+     class="strip-btn" target="_blank" rel="noopener" onclick="trackWhatsApp('strip')">
+    <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    (45) 99966-9028
+  </a>
+</div>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="serv-intro reveal">
+    <div>
+      <div class="eyebrow">O que fabricamos</div>
+      <h2 class="sec-title">Nossos Serviços</h2>
+    </div>
+    <p>Soluções em aço para residências, comércios e indústrias. Projeto com engenheiro responsável e equipe especializada do início ao fim.</p>
+  </div>
+  <div class="serv-grid">
+
+    <div class="serv-card reveal" onclick="trackServico('portoes-eletricos','click')">
+      <div class="serv-bg-n">01</div>
+      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M12 5v14M2 12h20"/></svg></div>
+      <div class="serv-name">Portões Elétricos</div>
+      <p class="serv-desc">Automação completa para portões residenciais e comerciais. Comando remoto, motor de alta durabilidade e suporte técnico.</p>
+      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="serv-card reveal" onclick="trackServico('porta-enrolar','click')">
+      <div class="serv-bg-n">02</div>
+      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16v2H4zM4 8h16v2H4zM4 12h16v2H4zM4 16h16v6H4z"/></svg></div>
+      <div class="serv-name">Porta de Enrolar</div>
+      <p class="serv-desc">Automáticas em chapas micro-perfuradas, vazadas, raiadas e lisas. Vão livre de até 9 metros — uso comercial e industrial.</p>
+      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="serv-card reveal" onclick="trackServico('coberturas-metalicas','click')">
+      <div class="serv-bg-n">03</div>
+      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 12L12 3l9 9"/><path d="M4 11v10h16V11"/></svg></div>
+      <div class="serv-name">Coberturas Metálicas</div>
+      <p class="serv-desc">Estruturas para qualquer cobertura com projeto arquitetônico assinado por engenheiro responsável.</p>
+      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="serv-card reveal" onclick="trackServico('grades-protecao','click')">
+      <div class="serv-bg-n">04</div>
+      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div>
+      <div class="serv-name">Grades de Proteção</div>
+      <p class="serv-desc">Grades pantográficas e de proteção para janelas, varandas e acessos. Segurança com acabamento profissional.</p>
+      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="serv-card reveal" onclick="trackServico('fachadas-mezaninos','click')">
+      <div class="serv-bg-n">05</div>
+      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+      <div class="serv-name">Fachadas & Mezaninos</div>
+      <p class="serv-desc">Estruturas metálicas para fachadas comerciais e mezaninos internos. Projetos especiais sob medida.</p>
+      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="serv-card reveal" onclick="trackServico('projetos-especiais','click')">
+      <div class="serv-bg-n">06</div>
+      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+      <div class="serv-name">Projetos Especiais</div>
+      <p class="serv-desc">Atendemos demandas específicas para construções comerciais, industriais e eventos em todo o oeste paranaense.</p>
+      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CLIENTES -->
+<section id="clientes">
+  <div class="cli-intro reveal">
+    <div>
+      <div class="eyebrow">Quem confia na Unimetal</div>
+      <h2 class="sec-title">Nossos Clientes</h2>
+    </div>
+    <p style="max-width:290px;font-weight:300;color:var(--pale);font-size:15px;line-height:1.85;">
+      Residências, redes varejistas, indústrias e eventos esportivos em toda a região oeste.
+    </p>
+  </div>
+  <div class="cli-grid">
+    <div class="cli-card wide tall">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house1.jpg" alt="Bob's" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Bob's</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house2.jpg" alt="Chilli Beans" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Chilli Beans</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house3.jpg" alt="Tennyx" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Tennyx</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house4.jpg" alt="Gold Calçados" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Gold Calçados</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/mezanino.png" alt="Mezanino" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Mezanino</div></div>
+    </div>
+    <div class="cli-card wide">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house5.jpg" alt="Autódromo de Cascavel" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Autódromo de Cascavel</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house6.jpg" alt="Domicílio" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Domicílio</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house7.jpg" alt="Denise Calçados" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Denise Calçados</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/portao.png" alt="Portão" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Portão Eletrônico</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/sacada.png" alt="Fachada" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Fachada Comercial</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/faxadaloja.png" alt="La Bodeguita" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">La Bodeguita</div></div>
+    </div>
+    <div class="cli-card">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/house8.jpg" alt="Coberturas" loading="lazy">
+      <div class="cli-overlay"><div class="cli-name">Coberturas Metálicas</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="sobre-grid">
+    <div class="reveal">
+      <div class="eyebrow">Nossa história</div>
+      <h2 class="sec-title" style="margin-bottom:32px">Sobre a<br>Unimetal</h2>
+      <p class="sobre-txt">A experiência adquirida ao longo dos anos faz da Metalúrgica Unimetal uma empresa totalmente voltada à qualidade de seus produtos, investindo no contínuo aprimoramento tecnológico e em programas de qualidade, visando sempre a satisfação total de seus clientes.</p>
+      <p class="sobre-txt">O trabalho no mercado cascavelense e região nos proporcionou atuações com renomadas empresas em suas construções, abrindo espaço para atuarmos em todo o oeste paranaense.</p>
+      <div class="sobre-bullets">
+        <div class="b-row">
+          <div class="b-ico"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><div class="b-title">Engenheiro Responsável</div><div class="b-desc">Projeto arquitetônico elaborado e assinado por profissional habilitado.</div></div>
+        </div>
+        <div class="b-row">
+          <div class="b-ico"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <div><div class="b-title">Equipe Especializada</div><div class="b-desc">Profissionais treinados para execução com qualidade e precisão em cada detalhe.</div></div>
+        </div>
+        <div class="b-row">
+          <div class="b-ico"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg></div>
+          <div><div class="b-title">Atendimento Regional</div><div class="b-desc">Cascavel e todo o oeste paranaense — orçamento rápido e sem compromisso.</div></div>
+        </div>
+      </div>
+      <a href="https://www.facebook.com/unimetal.com.br" target="_blank" rel="noopener"
+         class="btn-ghost" style="margin-top:32px;align-self:flex-start"
+         onclick="trackSocial('facebook')">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Siga no Facebook
+      </a>
+    </div>
+    <div class="sobre-right reveal">
+      <div class="stat-card"><div class="sc-n">30+</div><div><div class="sc-label">Anos no Mercado</div><div class="sc-desc">Solidez e reputação construída no oeste paranaense</div></div></div>
+      <div class="stat-card"><div class="sc-n">9m</div><div><div class="sc-label">Vão Livre Máximo</div><div class="sc-desc">Portas de enrolar com maior abertura disponível</div></div></div>
+      <div class="stat-card"><div class="sc-n">∞</div><div><div class="sc-label">Projetos Sob Medida</div><div class="sc-desc">Cada projeto é único — adaptado à sua necessidade</div></div></div>
+      <img src="https://metalurgicaunimetal.com.br/assets/img/A.png" alt="Trabalho Unimetal" style="width:100%;margin-top:3px;filter:brightness(.65)" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- VÍDEOS -->
+<section id="videos">
+  <div class="reveal">
+    <div class="eyebrow">Veja na prática</div>
+    <h2 class="sec-title">Nosso Trabalho<br>em Ação</h2>
+  </div>
+  <div class="vid-grid">
+    <div class="vid-wrap reveal" id="w1">
+      <video id="v1" preload="none" poster="https://metalurgicaunimetal.com.br/assets/img/portao.png">
+        <source src="https://metalurgicaunimetal.com.br/assets/video/portao.mp4" type="video/mp4">
+      </video>
+      <div class="vid-overlay" id="o1">
+        <div class="play-btn"><svg width="22" height="22" fill="white" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+      </div>
+      <div class="vid-label">Portão de Enrolar</div>
+    </div>
+    <div class="vid-wrap reveal" id="w2">
+      <video id="v2" preload="none" poster="https://metalurgicaunimetal.com.br/assets/img/team1.jpg">
+        <source src="https://metalurgicaunimetal.com.br/assets/video/grade.mp4" type="video/mp4">
+      </video>
+      <div class="vid-overlay" id="o2">
+        <div class="play-btn"><svg width="22" height="22" fill="white" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+      </div>
+      <div class="vid-label">Grade de Proteção</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="reveal">
+    <div class="eyebrow">Fale conosco</div>
+    <h2 class="sec-title">Entre em Contato</h2>
+    <p style="color:var(--pale);font-weight:300;margin-top:10px;max-width:440px;line-height:1.85;font-size:15px">
+      Solicite seu orçamento sem compromisso. Respondemos pelo WhatsApp em minutos.
+    </p>
+  </div>
+  <div class="cont-grid">
+    <div class="cont-left reveal">
+      <div class="cont-item">
+        <div class="cont-label">WhatsApp / Plantão</div>
+        <a href="tel:45999669028" class="cont-val" onclick="trackPhone('45999669028')">(45) 99966-9028</a>
+        <div class="cont-sub">Atendimento rápido, 7 dias por semana</div>
+      </div>
+      <div class="cont-item">
+        <div class="cont-label">Telefone Fixo</div>
+        <a href="tel:+554532261956" class="cont-val" onclick="trackPhone('554532261956')">(45) 3226-1956</a>
+        <div class="cont-sub">Escritório / Comercial</div>
+      </div>
+      <div class="cont-item">
+        <div class="cont-label">Localização</div>
+        <span class="cont-val" style="cursor:default">Cascavel, Paraná</span>
+        <div class="cont-sub">Atendemos todo o oeste paranaense</div>
+      </div>
+      <a href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Gostaria%20de%20um%20orçamento."
+         class="wpp-big" target="_blank" rel="noopener"
+         onclick="trackWhatsApp('contato_wpp_btn')">
+        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Conversar no WhatsApp
+      </a>
+      <div class="qr-row">
+        <img src="https://metalurgicaunimetal.com.br/assets/img/QrCode.jpg" alt="QR Code WhatsApp">
+        <div class="qr-txt">Aponte a câmera do celular para o QR Code e inicie uma conversa <strong>diretamente pelo WhatsApp.</strong></div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="form-box">
+        <div class="form-head">
+          <div class="form-head-title">Solicitar Orçamento</div>
+          <div class="form-head-sub">Preencha abaixo — entraremos em contato pelo WhatsApp.</div>
+        </div>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="f-field"><label>Nome</label><input type="text" id="fn" placeholder="Seu nome"></div>
+            <div class="f-field"><label>WhatsApp</label><input type="tel" id="ft" placeholder="(45) 00000-0000"></div>
+          </div>
+          <div class="f-field">
+            <label>Serviço de Interesse</label>
+            <select id="fs">
+              <option value="" disabled selected>Selecione...</option>
+              <option>Portão Elétrico</option>
+              <option>Porta de Enrolar</option>
+              <option>Cobertura Metálica</option>
+              <option>Grade de Proteção</option>
+              <option>Fachada / Mezanino</option>
+              <option>Projeto Especial</option>
+            </select>
+          </div>
+          <div class="f-field"><label>Mensagem</label><textarea id="fm" rows="4" placeholder="Descreva seu projeto..."></textarea></div>
+        </div>
+        <div class="f-submit">
+          <button class="submit-btn" onclick="enviar()">
+            Enviar pelo WhatsApp
+            <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </button>
+        </div>
+        <div class="form-note">Ao clicar você será redirecionado ao WhatsApp com sua mensagem já preenchida.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-top">
+    <div>
+      <span class="ft-brand">UNI<span>METAL</span></span>
+      <p class="ft-tagline">Fabricação e instalação de estruturas metálicas em Cascavel e todo o oeste paranaense. Qualidade, pontualidade e engenharia responsável.</p>
+      <div class="ft-social">
+        <a href="https://www.facebook.com/unimetal.com.br" target="_blank" rel="noopener" onclick="trackSocial('facebook_footer')">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-title">Serviços</div>
+      <ul class="ft-list">
+        <li><a href="#servicos" onclick="trackServico('footer_portoes','click')">Portões Elétricos</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_porta-enrolar','click')">Porta de Enrolar</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_coberturas','click')">Coberturas Metálicas</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_grades','click')">Grades de Proteção</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_fachadas','click')">Fachadas & Mezaninos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-title">Contato</div>
+      <ul class="ft-list">
+        <li><a href="tel:45999669028" onclick="trackPhone('footer_wpp')">(45) 99966-9028 — WhatsApp</a></li>
+        <li><a href="tel:+554532261956" onclick="trackPhone('footer_fixo')">(45) 3226-1956 — Fixo</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5545999669028" target="_blank" onclick="trackWhatsApp('footer_link')">Abrir no WhatsApp →</a></li>
+        <li><a href="#sobre">Cascavel, PR · Oeste Paranaense</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p class="ft-copy">© 2025 Metalúrgica Unimetal. Todos os direitos reservados.</p>
+    <p class="ft-copy" style="opacity:.45">Cascavel, PR</p>
+  </div>
+</footer>
+
+<!-- FLOAT WPP -->
+<a class="float-wpp"
+   href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Vi%20o%20site%20e%20quero%20um%20orçamento."
+   target="_blank" rel="noopener"
+   onclick="trackWhatsApp('float')"
+   aria-label="WhatsApp">
+  <svg width="21" height="21" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  Orçamento rápido
+</a>
+
+<script>
+// ── HAMBURGER ──
+const hbg = document.getElementById('hbg');
+const nav = document.getElementById('navLinks');
+hbg.addEventListener('click', () => { hbg.classList.toggle('open'); nav.classList.toggle('open'); });
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hbg.classList.remove('open'); nav.classList.remove('open'); }));
+
+// ── SCROLL REVEAL ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+}, { threshold: 0.11, rootMargin: '0px 0px -36px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// ── TRACKING: chegou na seção contato ──
+let contTracked = false;
+const contSec = document.getElementById('contato');
+new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting && !contTracked) {
+      contTracked = true;
+      if (typeof trackReachContact === 'function') trackReachContact();
+    }
+  });
+}, { threshold: 0.25 }).observe(contSec);
+
+// ── TRACKING: scroll 50% ──
+let s50 = false;
+window.addEventListener('scroll', () => {
+  const p = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  if (p >= 50 && !s50) {
+    s50 = true;
+    if (typeof gtag !== 'undefined') gtag('event', 'scroll', { event_category: 'engajamento', event_label: 'scroll_50pct', value: 50 });
+  }
+}, { passive: true });
+
+// ── VÍDEOS ──
+[[1],[2]].forEach(([n]) => {
+  const vid = document.getElementById('v'+n);
+  const ov  = document.getElementById('o'+n);
+  const wr  = document.getElementById('w'+n);
+  const lbl = ['portao_enrolar','grade_protecao'][n-1];
+  if (!vid) return;
+  ov.addEventListener('click', () => { vid.play(); wr.classList.add('playing'); if (typeof trackVideo === 'function') trackVideo(lbl); });
+  vid.addEventListener('click', () => { if (vid.paused) { vid.play(); wr.classList.add('playing'); } else { vid.pause(); wr.classList.remove('playing'); } });
+});
+
+// ── FORMULÁRIO → WHATSAPP ──
+function enviar() {
+  const nome = document.getElementById('fn').value.trim();
+  const tel  = document.getElementById('ft').value.trim();
+  const serv = document.getElementById('fs').value;
+  const msg  = document.getElementById('fm').value.trim();
+  if (!nome && !tel) { alert('Informe seu nome ou WhatsApp para continuar.'); return; }
+  if (typeof trackFormSubmit === 'function') trackFormSubmit();
+  let txt = '👋 Olá! Gostaria de um orçamento.';
+  if (nome) txt += '\n\n*Nome:* ' + nome;
+  if (tel)  txt += '\n*WhatsApp:* ' + tel;
+  if (serv) txt += '\n*Serviço:* ' + serv;
+  if (msg)  txt += '\n*Mensagem:* ' + msg;
+  txt += '\n\n_(Via metalurgicaunimetal.com.br)_';
+  window.open('https://api.whatsapp.com/send?phone=5545999669028&text=' + encodeURIComponent(txt), '_blank');
+}
+
+// ── NAV ACTIVE ──
+const secs = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a[href^="#"]');
+new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navAs.forEach(a => a.style.color = a.getAttribute('href') === '#' + e.target.id ? 'var(--red)' : '');
+    }
+  });
+}, { threshold: 0.4 }).observe(document.documentElement);
+secs.forEach(s => new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) navAs.forEach(a => a.style.color = a.getAttribute('href') === '#' + e.target.id ? 'var(--red)' : ''); });
+}, { threshold: 0.4 }).observe(s));
+</script>
+</body>
+</html>
