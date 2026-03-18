@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metalúrgica Unimetal – Portões, Coberturas e Estruturas Metálicas | Cascavel PR</title>
-  <meta name="description" content="Fabricação e instalação de portões elétricos, coberturas metálicas, grades de proteção e estruturas em aço. Cascavel e região oeste do Paraná. Solicite seu orçamento!" />
+  <title>Metalúrgica Unimetal – Porta de Enrolar, Estrutura Metálica, Barracão e Mezanino | Cascavel PR</title>
+  <meta name="description" content="Fabricação e instalação de porta de enrolar elétrica, estruturas metálicas, barracões, mezaninos e garagens em aço. Cascavel e região oeste do Paraná. Solicite seu orçamento!" />
 
   <!-- ══════════════════════════════════════════════════════
        GOOGLE ADS – SUBSTITUIR AW-1038295806 PELO ID REAL
@@ -138,10 +138,12 @@
     .serv-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
     .serv-intro p{max-width:360px;font-weight:300;color:var(--pale);font-size:15px;line-height:1.85}
     .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,.05)}
-    .serv-card{background:var(--coal);padding:40px 34px;position:relative;overflow:hidden;cursor:pointer;transition:background .3s}
+    .serv-card{background:var(--coal);padding:0;position:relative;overflow:hidden;cursor:pointer;transition:background .3s;min-height:360px;display:flex;flex-direction:column}
     .serv-card::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .38s ease}
-    .serv-card:hover{background:var(--iron)}
     .serv-card:hover::after{transform:scaleX(1)}
+    .serv-card-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.97) 40%,rgba(10,10,10,.6) 100%);transition:background .4s}
+    .serv-card:hover .serv-card-scrim{background:linear-gradient(to top,rgba(10,10,10,.98) 50%,rgba(100,5,8,.55) 100%)}
+    .serv-card-body{position:relative;z-index:1;padding:36px 28px 32px;display:flex;flex-direction:column;height:100%;justify-content:flex-end}
     .serv-bg-n{position:absolute;top:10px;right:18px;font-family:var(--ff-h);font-weight:900;font-size:76px;color:rgba(255,255,255,.033);line-height:1;pointer-events:none}
     .serv-ico{width:50px;height:50px;border:1px solid rgba(200,23,30,.32);display:flex;align-items:center;justify-content:center;margin-bottom:22px;color:var(--red);transition:background .3s,border-color .3s}
     .serv-card:hover .serv-ico{background:rgba(200,23,30,.1);border-color:var(--red)}
@@ -229,6 +231,12 @@
     .submit-btn:hover{background:var(--red-d)}
     .form-note{font-size:11px;color:var(--mid);text-align:center;padding:12px 28px;border-top:1px solid rgba(255,255,255,.06)}
 
+    /* ── TRUST STRIP ── */
+    .trust-strip{background:var(--iron);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:28px 5vw;display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+    .trust-item{display:flex;align-items:center;gap:10px;padding:12px 32px;color:var(--pale);font-family:var(--ff-h);font-weight:600;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap}
+    .trust-item svg{color:var(--red);flex-shrink:0}
+    .trust-divider{width:1px;height:32px;background:rgba(255,255,255,.1);flex-shrink:0}
+
     /* ── FOOTER ── */
     footer{background:var(--coal);border-top:1px solid rgba(255,255,255,.06)}
     .ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:56px;padding:64px 5vw 52px}
@@ -263,7 +271,7 @@
 
     /* ── RESPONSIVE ── */
     @media(max-width:1024px){
-      .serv-grid{grid-template-columns:repeat(2,1fr)}
+      .serv-grid{grid-template-columns:repeat(3,1fr)!important}
       .cli-grid{grid-template-columns:repeat(2,1fr)}
       .cli-card.wide{grid-column:span 1}
       .cli-card.tall{grid-row:span 1}
@@ -276,7 +284,10 @@
       .nav-links.open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:var(--coal);padding:20px 5vw;gap:6px;border-bottom:1px solid rgba(255,255,255,.08);z-index:199}
       .nav-links.open a{font-size:17px;padding:10px 0}
       .hero-stats{display:none}
-      .serv-grid{grid-template-columns:1fr}
+      .trust-strip{gap:0;padding:20px 5vw}
+      .trust-item{padding:10px 16px;font-size:12px}
+      .trust-divider{display:none}
+      .serv-grid{grid-template-columns:repeat(2,1fr)!important}
       .cli-grid{grid-template-columns:1fr 1fr}
       .sobre-grid{grid-template-columns:1fr;gap:44px}
       .vid-grid{grid-template-columns:1fr}
@@ -298,7 +309,7 @@
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#clientes">Clientes</a></li>
+    <li><a href="#clientes">Trabalhos</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#videos">Vídeos</a></li>
     <li>
@@ -323,7 +334,7 @@
   <div class="hero-content">
     <div class="hero-badge"><div class="hero-dot"></div>Cascavel, PR · Oeste do Paraná</div>
     <h1 class="hero-h1">Estruturas<br>em <span class="stroke">Aço</span><br>Sob Medida</h1>
-    <p class="hero-sub">Portões elétricos, coberturas metálicas, grades de proteção e fachadas — fabricação e instalação com engenheiro responsável.</p>
+    <p class="hero-sub">Porta de enrolar elétrica, estruturas metálicas, barracões, mezaninos e garagens — fabricação e instalação com engenheiro responsável.</p>
     <div class="hero-ctas">
       <a href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Gostaria%20de%20um%20orçamento%20pelo%20site."
          class="btn-red" target="_blank" rel="noopener"
@@ -360,54 +371,61 @@
     </div>
     <p>Soluções em aço para residências, comércios e indústrias. Projeto com engenheiro responsável e equipe especializada do início ao fim.</p>
   </div>
-  <div class="serv-grid">
+  <div class="serv-grid" style="grid-template-columns:repeat(5,1fr)">
 
-    <div class="serv-card reveal" onclick="trackServico('portoes-eletricos','click')">
-      <div class="serv-bg-n">01</div>
-      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M12 5v14M2 12h20"/></svg></div>
-      <div class="serv-name">Portões Elétricos</div>
-      <p class="serv-desc">Automação completa para portões residenciais e comerciais. Comando remoto, motor de alta durabilidade e suporte técnico.</p>
-      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="serv-card reveal" onclick="trackServico('porta-enrolar-eletrica','click')" style="background-image:url('https://metalurgicaunimetal.com.br/assets/img/portao.png');background-size:cover;background-position:center">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-card-body">
+        <div class="serv-bg-n">01</div>
+        <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 3h16v2H4zM4 7h16v2H4zM4 11h16v2H4zM4 15h16v7H4z"/><circle cx="12" cy="18" r="1.5" fill="currentColor"/></svg></div>
+        <div class="serv-name">Porta de Enrolar Elétrica</div>
+        <p class="serv-desc">Automáticas em chapas micro-perfuradas, vazadas, raiadas e lisas. Vão livre de até 9 metros com motor e controle remoto.</p>
+        <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
     </div>
 
-    <div class="serv-card reveal" onclick="trackServico('porta-enrolar','click')">
-      <div class="serv-bg-n">02</div>
-      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16v2H4zM4 8h16v2H4zM4 12h16v2H4zM4 16h16v6H4z"/></svg></div>
-      <div class="serv-name">Porta de Enrolar</div>
-      <p class="serv-desc">Automáticas em chapas micro-perfuradas, vazadas, raiadas e lisas. Vão livre de até 9 metros — uso comercial e industrial.</p>
-      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="serv-card reveal" onclick="trackServico('estrutura-metalica','click')" style="background-image:url('https://metalurgicaunimetal.com.br/assets/img/A.png');background-size:cover;background-position:center">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-card-body">
+        <div class="serv-bg-n">02</div>
+        <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 12L12 3l9 9"/><path d="M4 11v10h16V11"/><path d="M9 21v-6h6v6"/></svg></div>
+        <div class="serv-name">Estrutura Metálica</div>
+        <p class="serv-desc">Coberturas e estruturas em aço para qualquer tipo de obra, com projeto arquitetônico assinado por engenheiro responsável.</p>
+        <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
     </div>
 
-    <div class="serv-card reveal" onclick="trackServico('coberturas-metalicas','click')">
-      <div class="serv-bg-n">03</div>
-      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 12L12 3l9 9"/><path d="M4 11v10h16V11"/></svg></div>
-      <div class="serv-name">Coberturas Metálicas</div>
-      <p class="serv-desc">Estruturas para qualquer cobertura com projeto arquitetônico assinado por engenheiro responsável.</p>
-      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="serv-card reveal" onclick="trackServico('baracao','click')" style="background-image:url('https://metalurgicaunimetal.com.br/assets/img/C.png');background-size:cover;background-position:center">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-card-body">
+        <div class="serv-bg-n">03</div>
+        <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M2 11h20M6 7V5h12v2"/></svg></div>
+        <div class="serv-name">Barracão</div>
+        <p class="serv-desc">Galpões e barracões metálicos para indústria, armazenamento e uso agropecuário. Estrutura robusta, rápida e econômica.</p>
+        <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
     </div>
 
-    <div class="serv-card reveal" onclick="trackServico('grades-protecao','click')">
-      <div class="serv-bg-n">04</div>
-      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div>
-      <div class="serv-name">Grades de Proteção</div>
-      <p class="serv-desc">Grades pantográficas e de proteção para janelas, varandas e acessos. Segurança com acabamento profissional.</p>
-      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="serv-card reveal" onclick="trackServico('mezanino','click')" style="background-image:url('https://metalurgicaunimetal.com.br/assets/img/mezanino.png');background-size:cover;background-position:center">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-card-body">
+        <div class="serv-bg-n">04</div>
+        <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="13" width="20" height="8" rx="1"/><rect x="5" y="3" width="14" height="7" rx="1"/><path d="M8 13v-3M16 13v-3"/></svg></div>
+        <div class="serv-name">Mezanino</div>
+        <p class="serv-desc">Mezaninos metálicos sob medida para aproveitar o pé-direito duplo de lojas, galpões e escritórios. Projeto personalizado.</p>
+        <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
     </div>
 
-    <div class="serv-card reveal" onclick="trackServico('fachadas-mezaninos','click')">
-      <div class="serv-bg-n">05</div>
-      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
-      <div class="serv-name">Fachadas & Mezaninos</div>
-      <p class="serv-desc">Estruturas metálicas para fachadas comerciais e mezaninos internos. Projetos especiais sob medida.</p>
-      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
-
-    <div class="serv-card reveal" onclick="trackServico('projetos-especiais','click')">
-      <div class="serv-bg-n">06</div>
-      <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
-      <div class="serv-name">Projetos Especiais</div>
-      <p class="serv-desc">Atendemos demandas específicas para construções comerciais, industriais e eventos em todo o oeste paranaense.</p>
-      <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="serv-card reveal" onclick="trackServico('garagem','click')" style="background-image:url('https://metalurgicaunimetal.com.br/assets/img/B.png');background-size:cover;background-position:center">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-card-body">
+        <div class="serv-bg-n">05</div>
+        <div class="serv-ico"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22v-7h6v7"/></svg></div>
+        <div class="serv-name">Garagem</div>
+        <p class="serv-desc">Coberturas metálicas para garagens residenciais e comerciais. Estrutura em aço com telha e acabamento profissional.</p>
+        <a href="#contato" class="serv-cta">Solicitar orçamento <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
     </div>
 
   </div>
@@ -417,11 +435,11 @@
 <section id="clientes">
   <div class="cli-intro reveal">
     <div>
-      <div class="eyebrow">Quem confia na Unimetal</div>
-      <h2 class="sec-title">Nossos Clientes</h2>
+      <div class="eyebrow">Feito pela Unimetal</div>
+      <h2 class="sec-title">Nossos Trabalhos</h2>
     </div>
     <p style="max-width:290px;font-weight:300;color:var(--pale);font-size:15px;line-height:1.85;">
-      Residências, redes varejistas, indústrias e eventos esportivos em toda a região oeste.
+      Obras entregues para residências, redes varejistas, indústrias e eventos esportivos em toda a região.
     </p>
   </div>
   <div class="cli-grid">
@@ -508,7 +526,7 @@
     <div class="sobre-right reveal">
       <div class="stat-card"><div class="sc-n">30+</div><div><div class="sc-label">Anos no Mercado</div><div class="sc-desc">Solidez e reputação construída no oeste paranaense</div></div></div>
       <div class="stat-card"><div class="sc-n">9m</div><div><div class="sc-label">Vão Livre Máximo</div><div class="sc-desc">Portas de enrolar com maior abertura disponível</div></div></div>
-      <div class="stat-card"><div class="sc-n">∞</div><div><div class="sc-label">Projetos Sob Medida</div><div class="sc-desc">Cada projeto é único — adaptado à sua necessidade</div></div></div>
+      <div class="stat-card"><div class="sc-n">5</div><div><div class="sc-label">Especialidades em Aço</div><div class="sc-desc">Porta, estrutura, barracão, mezanino e garagem</div></div></div>
       <img src="https://metalurgicaunimetal.com.br/assets/img/A.png" alt="Trabalho Unimetal" style="width:100%;margin-top:3px;filter:brightness(.65)" loading="lazy">
     </div>
   </div>
@@ -528,7 +546,7 @@
       <div class="vid-overlay" id="o1">
         <div class="play-btn"><svg width="22" height="22" fill="white" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
       </div>
-      <div class="vid-label">Portão de Enrolar</div>
+      <div class="vid-label">Porta de Enrolar Elétrica</div>
     </div>
     <div class="vid-wrap reveal" id="w2">
       <video id="v2" preload="none" poster="https://metalurgicaunimetal.com.br/assets/img/team1.jpg">
@@ -537,10 +555,38 @@
       <div class="vid-overlay" id="o2">
         <div class="play-btn"><svg width="22" height="22" fill="white" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
       </div>
-      <div class="vid-label">Grade de Proteção</div>
+      <div class="vid-label">Estrutura Metálica</div>
     </div>
   </div>
 </section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    <span>Engenheiro Responsável</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span>Resposta em Minutos</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+    <span>Cascavel e Região Oeste</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+    <span>30+ Anos de Experiência</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+    <span>Orçamento Sem Compromisso</span>
+  </div>
+</div>
 
 <!-- CONTATO -->
 <section id="contato">
@@ -595,12 +641,11 @@
             <label>Serviço de Interesse</label>
             <select id="fs">
               <option value="" disabled selected>Selecione...</option>
-              <option>Portão Elétrico</option>
-              <option>Porta de Enrolar</option>
-              <option>Cobertura Metálica</option>
-              <option>Grade de Proteção</option>
-              <option>Fachada / Mezanino</option>
-              <option>Projeto Especial</option>
+              <option>Porta de Enrolar Elétrica</option>
+              <option>Estrutura Metálica</option>
+              <option>Barracão</option>
+              <option>Mezanino</option>
+              <option>Garagem</option>
             </select>
           </div>
           <div class="f-field"><label>Mensagem</label><textarea id="fm" rows="4" placeholder="Descreva seu projeto..."></textarea></div>
@@ -633,11 +678,11 @@
     <div>
       <div class="ft-col-title">Serviços</div>
       <ul class="ft-list">
-        <li><a href="#servicos" onclick="trackServico('footer_portoes','click')">Portões Elétricos</a></li>
-        <li><a href="#servicos" onclick="trackServico('footer_porta-enrolar','click')">Porta de Enrolar</a></li>
-        <li><a href="#servicos" onclick="trackServico('footer_coberturas','click')">Coberturas Metálicas</a></li>
-        <li><a href="#servicos" onclick="trackServico('footer_grades','click')">Grades de Proteção</a></li>
-        <li><a href="#servicos" onclick="trackServico('footer_fachadas','click')">Fachadas & Mezaninos</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_porta-enrolar','click')">Porta de Enrolar Elétrica</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_estrutura','click')">Estrutura Metálica</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_baracao','click')">Barracão</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_mezanino','click')">Mezanino</a></li>
+        <li><a href="#servicos" onclick="trackServico('footer_garagem','click')">Garagem</a></li>
       </ul>
     </div>
     <div>
