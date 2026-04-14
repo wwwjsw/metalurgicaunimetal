@@ -1,667 +1,532 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=AW-1038295806"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "AW-1038295806");
-        </script>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="src/output.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <!-- Facebook plugin setup -->
-        <div id="fb-root"></div>
-        <script>
-            (function (d, s, id) {
-                var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src =
-                    "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=573600582793020";
-                fjs.parentNode.insertBefore(js, fjs);
-            })(document, "script", "facebook-jssdk");
-        </script>
-
-        <!-- Navbar -->
-        <nav class="bg-white border-b shadow-sm fixed w-full z-50">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="flex justify-between">
-                    <div class="flex space-x-4">
-                        <!-- Logo -->
-                        <div class="flex items-center py-5 px-2">
-                            <img
-                                src="assets/img/logog.png"
-                                alt="Unimetal Logo"
-                                class="h-8"
-                            />
-                        </div>
-
-                        <!-- Primary Nav -->
-                        <div class="hidden md:flex items-center space-x-1">
-                            <a
-                                href="#Clientes"
-                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
-                                >Clientes</a
-                            >
-                            <a
-                                href="#Sobre"
-                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
-                                >Sobre</a
-                            >
-                            <a
-                                href="#institucional"
-                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
-                                >Institucional</a
-                            >
-                            <a
-                                href="#contato"
-                                class="py-5 px-3 text-gray-700 hover:text-gray-900 transition duration-300"
-                                >Contato</a
-                            >
-                        </div>
-                    </div>
-
-                    <!-- Mobile menu button -->
-                    <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button" aria-label="Menu">
-                            <svg
-                                class="w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mobile menu -->
-            <div class="mobile-menu hidden md:hidden">
-                <a
-                    href="#Clientes"
-                    class="block py-2 px-4 text-sm hover:bg-gray-200"
-                    >Clientes</a
-                >
-                <a
-                    href="#Sobre"
-                    class="block py-2 px-4 text-sm hover:bg-gray-200"
-                    >Sobre</a
-                >
-                <a
-                    href="#institucional"
-                    class="block py-2 px-4 text-sm hover:bg-gray-200"
-                    >Institucional</a
-                >
-                <a
-                    href="#contato"
-                    class="block py-2 px-4 text-sm hover:bg-gray-200"
-                    >Contato</a
-                >
-            </div>
-        </nav>
-
-        <!-- Header -->
-        <header id="home" class="relative h-screen">
-            <div
-                class="absolute inset-0 w-full h-full bg-black"
-                style="
-                    background-image: url(&quot;assets/img/banner.jpg&quot;);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                "
-            ></div>
-            <div
-                class="absolute inset-0 flex flex-col items-center justify-center"
-            >
-                <a
-                    href="https://api.whatsapp.com/send?phone=5545999669028"
-                    class="px-8 py-4 mx-4 bg-green-500 text-white rounded-full text-lg font-bold shadow-lg hover:bg-green-600 transition-all duration-300 animate-bounce"
-                    style="animation: bounce 2s infinite"
-                >
-                    Atendimento rápido por WhatsApp, Clique aqui
-                </a>
-            </div>
-        </header>
-
-        <!-- Page content -->
-        <div class="max-w-7xl mx-auto px-4 py-8">
-            <!-- Section -->
-            <div class="py-8" id="Clientes">
-                <h3
-                    class="text-3xl font-bold border-b border-gray-200 pb-4 mb-8"
-                >
-                    Clientes
-                </h3>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Bob's
-                    </div>
-                    <img
-                        src="assets/img/house1.jpg"
-                        alt="Bob's"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Chilli Beans
-                    </div>
-                    <img
-                        src="assets/img/house2.jpg"
-                        alt="Chilli Beans"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        tennyx
-                    </div>
-                    <img
-                        src="assets/img/house3.jpg"
-                        alt="tennyx"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Gold Calçados
-                    </div>
-                    <img
-                        src="assets/img/house4.jpg"
-                        alt="Gold Calçados"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-            </div>
-
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
-            >
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Mezanino
-                    </div>
-                    <img
-                        src="assets/img/mezanino.png"
-                        alt="Mezanino"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Fachada de loja
-                    </div>
-                    <img
-                        src="assets/img/sacada.png"
-                        alt="Fachada"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        La bodeguita
-                    </div>
-                    <img
-                        src="assets/img/faxadaloja.png"
-                        alt="Fachada"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Porta de enrolar eletrônica
-                    </div>
-                    <img
-                        src="assets/img/portao.png"
-                        alt="Porta de enrolar"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-            </div>
-
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
-            >
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Autódromo de Cascavel
-                    </div>
-                    <img
-                        src="assets/img/house5.jpg"
-                        alt="House"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Domicílio
-                    </div>
-                    <img
-                        src="assets/img/house6.jpg"
-                        alt="Domicílio"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Denise Calçados
-                    </div>
-                    <img
-                        src="assets/img/house7.jpg"
-                        alt="Denise Calçados"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Coberturas metálicas
-                    </div>
-                    <img
-                        src="assets/img/house8.jpg"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-            </div>
-
-            <!-- Serviços Section -->
-            <div class="py-8" id="Servicos">
-                <h3
-                    class="text-3xl font-bold border-b border-gray-200 pb-4 mb-8"
-                >
-                    Nossos Serviços
-                </h3>
-            </div>
-
-            <div
-                class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-            >
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Coberturas metálicas
-                    </div>
-                    <img
-                        src="assets/img/A.png"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Portões
-                    </div>
-                    <img
-                        src="assets/img/B.png"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Coberturas metálicas
-                    </div>
-                    <img
-                        src="assets/img/C.png"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Portões
-                    </div>
-                    <img
-                        src="assets/img/D.png"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-            </div>
-
-            <div
-                class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6"
-            >
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Grades de Proteção
-                    </div>
-                    <img
-                        src="assets/img/team1.jpg"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Portões Elétricos
-                    </div>
-                    <img
-                        src="assets/img/team2.jpg"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Grades de Proteção
-                    </div>
-                    <img
-                        src="assets/img/team3.jpg"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-
-                <div
-                    class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
-                >
-                    <div
-                        class="absolute top-0 left-0 bg-black bg-opacity-75 text-white px-4 py-2 z-10"
-                    >
-                        Pantográfica
-                    </div>
-                    <img
-                        src="assets/img/team4.jpg"
-                        alt="Coberturas metálicas"
-                        class="w-full h-64 object-cover"
-                    />
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metalúrgica Unimetal – Porta de Enrolar, Estrutura Metálica, Barracão e Mezanino | Cascavel PR</title>
+  <meta name="description" content="Fabricação e instalação de porta de enrolar elétrica, estruturas metálicas, barracões, mezaninos e garagens em aço. Cascavel e região oeste do Paraná. Solicite seu orçamento!" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1038295806"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-1038295806');
+    function trackWhatsApp(origem) {
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WPP', value: 5.0, currency: 'BRL' });
+      gtag('event', 'contact',    { event_category: 'contato', event_label: origem || 'wpp' });
+    }
+    function trackPhone(num) {
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_PHONE', value: 3.0, currency: 'BRL' });
+      gtag('event', 'contact',    { event_category: 'contato', event_label: 'phone_' + num });
+    }
+    function trackFormSubmit() {
+      gtag('event', 'conversion',    { send_to: 'AW-1038295806/LABEL_FORM', value: 15.0, currency: 'BRL' });
+      gtag('event', 'generate_lead', { event_category: 'lead', event_label: 'form_orcamento', value: 15.0, currency: 'BRL' });
+    }
+    function trackServico(nome, acao) {
+      gtag('event', acao === 'click' ? 'select_item' : 'view_item', {
+        event_category: 'servico', event_label: nome,
+        items: [{ item_name: nome, item_category: 'metalurgia' }]
+      });
+    }
+    function trackReachContact() {
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_REACH_CONTACT' });
+      gtag('event', 'begin_checkout', { event_category: 'intencao', event_label: 'chegou_contato' });
+    }
+    function trackVideo(nome) {
+      gtag('event', 'video_play', { event_category: 'midia', event_label: nome });
+    }
+    function trackSocial(rede) {
+      gtag('event', 'click', { event_category: 'social', event_label: rede });
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --red:#C8171E; --red-d:#9E1117; --red-deep:#6B0A0E;
+      --black:#0d0d0d; --coal:#141414; --iron:#1d1d1d;
+      --steel:#2a2a2a; --dim:#444; --mid:#777;
+      --pale:#aaa; --light:#ddd; --white:#f4f2ef;
+      --ff-h:'Barlow Condensed',sans-serif;
+      --ff-b:'Barlow',sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--light);font-family:var(--ff-b);font-weight:400;line-height:1.65;overflow-x:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    .eyebrow{font-family:var(--ff-h);font-size:12px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .eyebrow::before{content:'';width:24px;height:2px;background:var(--red);flex-shrink:0}
+    .sec-title{font-family:var(--ff-h);font-weight:900;font-size:clamp(38px,5.5vw,70px);line-height:.95;text-transform:uppercase;color:var(--white);letter-spacing:1px}
+    .btn-red{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;text-decoration:none;font-family:var(--ff-h);font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:15px 30px;border:none;cursor:pointer;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));transition:background .2s,transform .15s}
+    .btn-red:hover{background:var(--red-d);transform:translateY(-2px)}
+    .btn-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--light);text-decoration:none;font-family:var(--ff-h);font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:13px 26px;border:1px solid rgba(255,255,255,.18);cursor:pointer;transition:border-color .2s,color .2s}
+    .btn-ghost:hover{border-color:var(--red);color:var(--red)}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:rgba(13,13,13,.95);border-bottom:1px solid rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo img{height:36px;width:auto;filter:brightness(0) invert(1)}
+    .nav-logo-txt{font-family:var(--ff-h);font-weight:900;font-size:22px;letter-spacing:3px;color:var(--white)}
+    .nav-logo-txt span{color:var(--red)}
+    .nav-links{display:flex;align-items:center;gap:4px;list-style:none}
+    .nav-links a{text-decoration:none;font-family:var(--ff-h);font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--pale);padding:8px 12px;transition:color .2s}
+    .nav-links a:hover{color:var(--red)}
+    .nav-wpp{background:#25D366!important;color:#fff!important;padding:8px 18px!important;clip-path:polygon(0 0,calc(100% - 7px) 0,100% 7px,100% 100%,7px 100%,0 calc(100% - 7px));transition:background .2s!important}
+    .nav-wpp:hover{background:#1da851!important;color:#fff!important}
+    .hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:5px}
+    .hbg span{display:block;width:24px;height:2px;background:var(--light);transition:all .3s}
+    .hbg.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .hbg.open span:nth-child(2){opacity:0}
+    .hbg.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+    #hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:68px 5vw 0;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background:linear-gradient(115deg,rgba(13,13,13,.97) 42%,rgba(90,4,8,.75) 100%),url('https://metalurgicaunimetal.com.br/assets/img/house1.jpg') center/cover no-repeat}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}
+    .hero-bar{position:absolute;top:0;left:0;width:5px;height:100%;background:linear-gradient(to bottom,var(--red) 0%,transparent 60%)}
+    .hero-content{position:relative;z-index:2;max-width:700px;padding:80px 0 100px}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,23,30,.12);border:1px solid rgba(200,23,30,.38);color:#ff7070;font-family:var(--ff-h);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:7px 14px;margin-bottom:24px}
+    .hero-dot{width:7px;height:7px;background:var(--red);border-radius:50%;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(1.5)}}
+    .hero-h1{font-family:var(--ff-h);font-weight:900;font-size:clamp(54px,9.5vw,118px);line-height:.92;text-transform:uppercase;color:var(--white);margin-bottom:24px;letter-spacing:1px}
+    .hero-h1 .stroke{-webkit-text-stroke:2px var(--red);color:transparent}
+    .hero-sub{font-size:17px;font-weight:300;color:var(--pale);line-height:1.82;max-width:500px;margin-bottom:40px}
+    .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-stats{position:absolute;right:5vw;bottom:64px;z-index:2;display:flex;gap:2px}
+    .stat{background:rgba(18,18,18,.92);border:1px solid rgba(255,255,255,.07);border-top:2px solid var(--red);padding:22px 28px;text-align:center;min-width:116px}
+    .stat-n{font-family:var(--ff-h);font-weight:900;font-size:42px;line-height:1;color:var(--white)}
+    .stat-n em{color:var(--red);font-style:normal}
+    .stat-l{font-family:var(--ff-h);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-top:5px}
+    .strip{background:var(--red);padding:16px 5vw;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .strip-txt{font-family:var(--ff-h);font-weight:700;font-size:17px;letter-spacing:1px;text-transform:uppercase;color:#fff}
+    .strip-txt small{opacity:.75;font-weight:400;font-size:13px;margin-left:10px;letter-spacing:0;text-transform:none}
+    .strip-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.22);color:#fff;text-decoration:none;font-family:var(--ff-h);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:10px 20px;border:1px solid rgba(255,255,255,.28);transition:background .2s;white-space:nowrap}
+    .strip-btn:hover{background:rgba(0,0,0,.42)}
+    #servicos{padding:108px 5vw;background:var(--coal)}
+    .serv-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+    .serv-intro p{max-width:360px;font-weight:300;color:var(--pale);font-size:15px;line-height:1.85}
+    .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,.05)}
+    .serv-card{background:var(--coal);padding:0;position:relative;overflow:hidden;cursor:pointer;transition:background .3s;min-height:360px;display:flex;flex-direction:column}
+    .serv-card::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .38s ease}
+    .serv-card:hover::after{transform:scaleX(1)}
+    .serv-card-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.97) 40%,rgba(10,10,10,.6) 100%);transition:background .4s}
+    .serv-card:hover .serv-card-scrim{background:linear-gradient(to top,rgba(10,10,10,.98) 50%,rgba(100,5,8,.55) 100%)}
+    .serv-card-body{position:relative;z-index:1;padding:36px 28px 32px;display:flex;flex-direction:column;height:100%;justify-content:flex-end}
+    .serv-bg-n{position:absolute;top:20px;right:20px;font-family:var(--ff-h);font-weight:900;font-size:80px;line-height:1;color:rgba(255,255,255,.03);pointer-events:none;transition:color .3s}
+    .serv-card:hover .serv-bg-n{color:rgba(200,23,30,.15)}
+    .serv-ico{width:48px;height:48px;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;color:var(--red);margin-bottom:24px;transition:background .3s,color .3s}
+    .serv-card:hover .serv-ico{background:var(--red);color:#fff}
+    .serv-h3{font-family:var(--ff-h);font-weight:800;font-size:26px;text-transform:uppercase;color:var(--white);margin-bottom:12px;letter-spacing:1px}
+    .serv-p{font-size:14px;color:var(--pale);font-weight:300;line-height:1.7;margin-bottom:24px}
+    .serv-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-h);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red);text-decoration:none}
+    .serv-link svg{transition:transform .2s}
+    .serv-card:hover .serv-link svg{transform:translateX(5px)}
+    #sobre{padding:120px 5vw;background:var(--black);position:relative}
+    .sobre-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+    .sobre-txt{font-size:17px;font-weight:300;color:var(--pale);line-height:1.85;margin-bottom:24px}
+    .sobre-bullets{margin-top:40px;display:flex;flex-direction:column;gap:24px}
+    .b-row{display:flex;gap:20px}
+    .b-ico{width:40px;height:40px;background:rgba(200,23,30,.1);border:1px solid rgba(200,23,30,.2);display:flex;align-items:center;justify-content:center;color:var(--red);flex-shrink:0}
+    .b-title{font-family:var(--ff-h);font-weight:700;font-size:16px;text-transform:uppercase;color:var(--white);margin-bottom:4px}
+    .b-desc{font-size:14px;color:var(--mid);font-weight:300}
+    .sobre-right{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:3px;background:rgba(255,255,255,.05)}
+    .stat-card{background:var(--iron);padding:32px 24px;text-align:left}
+    .stat-card:nth-child(3){grid-column:span 2}
+    .sc-n{font-family:var(--ff-h);font-weight:900;font-size:48px;color:var(--red);line-height:1;margin-bottom:10px}
+    .sc-label{font-family:var(--ff-h);font-weight:700;font-size:14px;text-transform:uppercase;color:var(--white);letter-spacing:1px}
+    .sc-desc{font-size:12px;color:var(--mid);margin-top:6px;line-height:1.5}
+    #videos{padding:100px 5vw;background:var(--coal)}
+    .vid-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:56px}
+    .vid-wrap{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;cursor:pointer}
+    .vid-wrap video{width:100%;height:100%;object-fit:cover;opacity:.6;transition:opacity .4s}
+    .vid-wrap:hover video{opacity:.8}
+    .vid-wrap.playing video{opacity:1}
+    .vid-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2;transition:opacity .3s}
+    .vid-wrap.playing .vid-overlay{opacity:0;pointer-events:none}
+    .play-btn{width:70px;height:70px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(200,23,30,.4);transition:transform .3s}
+    .vid-wrap:hover .play-btn{transform:scale(1.1)}
+    .vid-label{position:absolute;bottom:24px;left:24px;z-index:3;font-family:var(--ff-h);font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+    .trust-strip{background:var(--iron);padding:40px 5vw;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+    .trust-item{display:flex;align-items:center;gap:14px;color:var(--pale);font-family:var(--ff-h);font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+    .trust-item svg{color:var(--red)}
+    .trust-divider{width:1px;height:30px;background:rgba(255,255,255,.08)}
+    #contato{padding:120px 5vw;background:var(--black)}
+    .cont-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;margin-top:64px}
+    .cont-item{margin-bottom:48px}
+    .cont-label{font-family:var(--ff-h);font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+    .cont-val{font-family:var(--ff-h);font-weight:900;font-size:clamp(32px,4vw,52px);color:var(--white);text-decoration:none;line-height:1;display:block;transition:color .2s}
+    a.cont-val:hover{color:var(--red)}
+    .cont-sub{font-size:14px;color:var(--mid);margin-top:10px;font-weight:300}
+    .wpp-big{display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;text-decoration:none;font-family:var(--ff-h);font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;padding:20px 40px;clip-path:polygon(0 0,calc(100% - 15px) 0,100% 15px,100% 100%,15px 100%,0 calc(100% - 15px));transition:background .2s,transform .2s}
+    .wpp-big:hover{background:#1da851;transform:translateY(-3px)}
+    .qr-row{display:flex;align-items:center;gap:20px;margin-top:40px;padding-top:40px;border-top:1px solid rgba(255,255,255,.06)}
+    .qr-row img{width:90px;height:90px;border:4px solid #fff}
+    .qr-txt{font-size:13px;color:var(--pale);line-height:1.6;max-width:200px}
+    .form-box{background:var(--iron);border:1px solid rgba(255,255,255,.06);position:relative}
+    .form-box::before{content:'';position:absolute;top:-1px;left:-1px;width:60px;height:60px;border-top:3px solid var(--red);border-left:3px solid var(--red)}
+    .form-head{padding:40px 40px 30px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .form-head-title{font-family:var(--ff-h);font-weight:900;font-size:28px;text-transform:uppercase;color:var(--white);letter-spacing:1px}
+    .form-head-sub{font-size:14px;color:var(--mid);margin-top:4px}
+    .form-body{padding:40px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+    .f-field{margin-bottom:24px}
+    .f-field label{display:block;font-family:var(--ff-h);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--pale);margin-bottom:10px}
+    .f-field input,.f-field select,.f-field textarea{width:100%;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);padding:14px 18px;color:#fff;font-family:var(--ff-b);font-size:15px;transition:border-color .2s,background .2s}
+    .f-field input:focus,.f-field select:focus,.f-field textarea:focus{outline:none;border-color:var(--red);background:rgba(255,255,255,.05)}
+    .f-submit{padding:0 40px 40px}
+    .submit-btn{width:100%;background:var(--red);color:#fff;border:none;padding:18px;font-family:var(--ff-h);font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:background .2s}
+    .submit-btn:hover{background:var(--red-d)}
+    footer{padding:80px 5vw 40px;background:#080808;border-top:1px solid rgba(255,255,255,.05)}
+    .ft-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;margin-bottom:60px;flex-wrap:wrap}
+    .ft-logo{text-decoration:none;display:flex;align-items:center;gap:12px}
+    .ft-logo img{height:42px;filter:brightness(0) invert(1)}
+    .ft-logo-txt{font-family:var(--ff-h);font-weight:900;font-size:28px;letter-spacing:3px;color:var(--white)}
+    .ft-logo-txt span{color:var(--red)}
+    .ft-links{display:flex;gap:32px;list-style:none}
+    .ft-links a{text-decoration:none;font-family:var(--ff-h);font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--mid);transition:color .2s}
+    .ft-links a:hover{color:var(--red)}
+    .ft-bottom{padding-top:40px;border-top:1px solid rgba(255,255,255,.05);display:flex;justify-content:space-between;align-items:center}
+    .ft-copy{font-size:12px;color:var(--dim);letter-spacing:1px;text-transform:uppercase}
+    .float-wpp{position:fixed;bottom:30px;right:30px;z-index:150;background:#25D366;color:#fff;text-decoration:none;display:flex;align-items:center;gap:12px;padding:12px 20px;border-radius:50px;font-family:var(--ff-h);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 30px rgba(37,211,102,.3);transition:transform .3s,background .2s}
+    .float-wpp:hover{transform:scale(1.05);background:#1da851}
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    .reveal.vis{opacity:1;transform:translateY(0)}
+    @media(max-width:991px){
+      .sobre-grid,.cont-grid{grid-template-columns:1fr;gap:60px}
+      .serv-grid{grid-template-columns:repeat(2,1fr)}
+      .hero-stats{position:static;margin-top:40px;justify-content:flex-start}
+      .vid-grid{grid-template-columns:1fr}
+      .trust-strip{flex-wrap:wrap;gap:20px;justify-content:center}
+      .trust-divider{display:none}
+    }
+    @media(max-width:767px){
+      nav{padding:0 20px}
+      .nav-links{position:fixed;top:68px;left:0;right:0;bottom:0;background:var(--black);flex-direction:column;padding:40px;gap:20px;transform:translateX(100%);transition:transform .4s cubic-bezier(.77,0,.175,1);z-index:199;align-items:flex-start}
+      .nav-links.open{transform:translateX(0)}
+      .nav-links a{font-size:18px;padding:10px 0}
+      .hbg{display:flex}
+      .serv-grid{grid-template-columns:1fr}
+      .form-row{grid-template-columns:1fr}
+      .ft-bottom{flex-direction:column;gap:20px;text-align:center}
+      .hero-h1{font-size:62px}
+      .hero-content{padding-top:40px}
+      .stat{padding:15px;min-width:90px}
+      .stat-n{font-size:32px}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="https://metalurgicaunimetal.com.br/assets/img/logo.png" alt="Unimetal">
+    <div class="nav-logo-txt">UNI<span>METAL</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Início</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#videos">Vídeos</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5545999669028" class="nav-wpp" target="_blank" rel="noopener" onclick="trackWhatsApp('nav_btn')">WhatsApp</a></li>
+  </ul>
+  <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+</nav>
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-bar"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><div class="hero-dot"></div> Cascavel e Região Oeste</div>
+    <h1 class="hero-h1">Estruturas de <span class="stroke">Aço</span> que Duram.</h1>
+    <p class="hero-sub">Especialistas em portas de enrolar elétricas, barracões e mezaninos. Solidez e precisão para o seu projeto comercial ou industrial.</p>
+    <div class="hero-ctas">
+      <a href="#contato" class="btn-red">Solicitar Orçamento</a>
+      <a href="#servicos" class="btn-ghost">Ver Serviços</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-n">30<em>+</em></div><div class="stat-l">Anos</div></div>
+    <div class="stat"><div class="stat-n">100<em>%</em></div><div class="stat-l">Qualidade</div></div>
+  </div>
+</section>
+<div class="strip">
+  <div class="strip-txt">Precisa de manutenção urgente? <small>Atendemos chamados para portas de enrolar em Cascavel.</small></div>
+  <a href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Preciso%20de%20manutenção%20em%20uma%20porta%20de%20enrolar." class="strip-btn" target="_blank" rel="noopener" onclick="trackWhatsApp('strip_manutencao')">Chamar no WhatsApp</a>
+</div>
+<section id="servicos">
+  <div class="serv-intro reveal">
+    <div>
+      <div class="eyebrow">O que fazemos</div>
+      <h2 class="sec-title">Soluções em<br>Metalurgia</h2>
+    </div>
+    <p>Trabalhamos com materiais de alta resistência e acabamento impecável para garantir a segurança do seu patrimônio.</p>
+  </div>
+  <div class="serv-grid">
+    <div class="serv-card reveal" onclick="location.href='#contato'; trackServico('Porta de Enrolar','click')">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-bg-n">01</div>
+      <div class="serv-card-body">
+        <div class="serv-ico"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M4 15h16"/></svg></div>
+        <h3 class="serv-h3">Portas de Enrolar</h3>
+        <p class="serv-p">Automáticas e manuais, com lâminas galvanizadas e motores de alta performance para vãos de até 9 metros.</p>
+        <span class="serv-link">Orçamento <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </div>
+    <div class="serv-card reveal" onclick="location.href='#contato'; trackServico('Estrutura Metálica','click')">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-bg-n">02</div>
+      <div class="serv-card-body">
+        <div class="serv-ico"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 7l9-4 9 4M4 7v14M20 7v14M12 3v18"/></svg></div>
+        <h3 class="serv-h3">Estruturas</h3>
+        <p class="serv-p">Projetos completos de estruturas metálicas para telhados, mezaninos e reforços estruturais com cálculo técnico.</p>
+        <span class="serv-link">Orçamento <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </div>
+    <div class="serv-card reveal" onclick="location.href='#contato'; trackServico('Barracão','click')">
+      <div class="serv-card-scrim"></div>
+      <div class="serv-bg-n">03</div>
+      <div class="serv-card-body">
+        <div class="serv-ico"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21V9l9-5 9 5v12M3 21h18M9 21v-6h6v6"/></svg></div>
+        <h3 class="serv-h3">Barracões</h3>
+        <p class="serv-p">Construção de barracões industriais e comerciais com agilidade e foco no melhor aproveitamento de espaço.</p>
+        <span class="serv-link">Orçamento <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sobre">
+  <div class="sobre-grid">
+    <div class="sobre-left reveal">
+      <div class="eyebrow">Nossa História</div>
+      <h2 class="sec-title" style="margin-bottom:32px">Sobre a<br>Unimetal</h2>
+      <p class="sobre-txt">A experiência adquirida ao longo dos anos faz da Metalúrgica Unimetal uma empresa totalmente voltada à qualidade de seus produtos, investindo no contínuo aprimoramento tecnológico e em programas de qualidade, visando sempre a satisfação total de seus clientes.</p>
+      <p class="sobre-txt">O trabalho no mercado cascavelense e região nos proporcionou atuações com renomadas empresas em suas construções, abrindo espaço para atuarmos em todo o oeste paranaense.</p>
+      <div class="sobre-bullets">
+        <div class="b-row">
+          <div class="b-ico"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><div class="b-title">Engenheiro Responsável</div><div class="b-desc">Projeto arquitetônico elaborado e assinado por profissional habilitado.</div></div>
         </div>
-
-        <div class="container px-8 py-8" id="Clientes">
-            <h3 class="text-3xl font-bold border-b border-gray-200 pb-4">
-                Veja mais
-            </h3>
+        <div class="b-row">
+          <div class="b-ico"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <div><div class="b-title">Equipe Especializada</div><div class="b-desc">Profissionais treinados para execução com qualidade e precisão em cada detalhe.</div></div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
-            <div class="mb-6">
-                <div class="relative">
-                    <video class="w-full" autoplay muted loop>
-                        <source
-                            src="assets/video/portao.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
-                </div>
-            </div>
-            <div class="mb-6">
-                <div class="relative">
-                    <video class="w-full" autoplay muted loop>
-                        <source src="assets/video/grade.mp4" type="video/mp4" />
-                    </video>
-                </div>
-            </div>
+        <div class="b-row">
+          <div class="b-ico"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg></div>
+          <div><div class="b-title">Atendimento Regional</div><div class="b-desc">Cascavel e todo o oeste paranaense — orçamento rápido e sem compromisso.</div></div>
         </div>
-
-        <!-- Section -->
-        <div class="container px-8 py-8" id="Sobre">
-            <h3 class="text-3xl font-bold border-b border-gray-200 pb-4">
-                Sobre
-            </h3>
-            <p class="mt-4">
-                A experiência adquirida ao longo desses desses anos faz da
-                Metalúrgica Unimetal uma empresa totalmente voltada à qualidade
-                de seus produtos, investindo no contínuo aprimoramento
-                tecnológico e em programas de qualidade, visando sempre a
-                satisfação total de seus clientes
-            </p>
-            <h3 class="text-xl font-bold mt-4">Fabricamos:</h3>
-            <p class="mt-2">
-                Portas de enrolar automáticas, em chapas micro-perfuradas,
-                vazadas, raiadas e lisas, com vão livre de até nove metros.
-            </p>
-            <p class="mt-2">
-                Estruturas metálicas para qualquer cobertura, com projeto
-                arquitetônico elaborado por engenheiro responsável.
-            </p>
-            <h3 class="text-xl font-bold mt-4">Equipe:</h3>
-            <p class="mt-2">
-                Contamos com uma equipe habilitada para executar os projetos com
-                qualidade e perfeição.
-            </p>
-            <p class="mt-2">
-                O trabalho no mercado cascavelence e região nos proporcionou
-                atuações com renomadas empresas em suas construções, abrindo
-                espaço para atuarmos em todo oeste paranaense.
-            </p>
+      </div>
+      <a href="https://www.facebook.com/unimetal.com.br" target="_blank" rel="noopener" class="btn-ghost" style="margin-top:32px;align-self:flex-start" onclick="trackSocial('facebook')">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Siga no Facebook
+      </a>
+    </div>
+    <div class="sobre-right reveal">
+      <div class="stat-card"><div class="sc-n">30+</div><div><div class="sc-label">Anos no Mercado</div><div class="sc-desc">Solidez e reputação construída no oeste paranaense</div></div></div>
+      <div class="stat-card"><div class="sc-n">9m</div><div><div class="sc-label">Vão Livre Máximo</div><div class="sc-desc">Portas de enrolar com maior abertura disponível</div></div></div>
+      <div class="stat-card"><div class="sc-n">5</div><div><div class="sc-label">Especialidades em Aço</div><div class="sc-desc">Porta, estrutura, barracão, mezanino e garagem</div></div></div>
+      <img src="https://metalurgicaunimetal.com.br/assets/img/A.png" alt="Trabalho Unimetal" style="width:100%;margin-top:3px;filter:brightness(.65)" loading="lazy">
+    </div>
+  </div>
+</section>
+<section id="videos">
+  <div class="reveal">
+    <div class="eyebrow">Veja na prática</div>
+    <h2 class="sec-title">Nosso Trabalho<br>em Ação</h2>
+  </div>
+  <div class="vid-grid">
+    <div class="vid-wrap reveal" id="w1">
+      <video id="v1" preload="none" poster="https://metalurgicaunimetal.com.br/assets/img/portao.png">
+        <source src="https://metalurgicaunimetal.com.br/assets/video/portao.mp4" type="video/mp4">
+      </video>
+      <div class="vid-overlay" id="o1">
+        <div class="play-btn"><svg width="22" height="22" fill="white" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+      </div>
+      <div class="vid-label">Porta de Enrolar Elétrica</div>
+    </div>
+    <div class="vid-wrap reveal" id="w2">
+      <video id="v2" preload="none" poster="https://metalurgicaunimetal.com.br/assets/img/team1.jpg">
+        <source src="https://metalurgicaunimetal.com.br/assets/video/grade.mp4" type="video/mp4">
+      </video>
+      <div class="vid-overlay" id="o2">
+        <div class="play-btn"><svg width="22" height="22" fill="white" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+      </div>
+      <div class="vid-label">Estrutura Metálica</div>
+    </div>
+  </div>
+</section>
+<div class="trust-strip">
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    <span>Engenheiro Responsável</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span>Resposta em Minutos</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+    <span>Cascavel e Região Oeste</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+    <span>30+ Anos de Experiência</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+    <span>Orçamento Sem Compromisso</span>
+  </div>
+</div>
+<section id="contato">
+  <div class="reveal">
+    <div class="eyebrow">Fale conosco</div>
+    <h2 class="sec-title">Entre em Contato</h2>
+    <p style="color:var(--pale);font-weight:300;margin-top:10px;max-width:440px;line-height:1.85;font-size:15px">Solicite seu orçamento sem compromisso. Respondemos pelo WhatsApp em minutos.</p>
+  </div>
+  <div class="cont-grid">
+    <div class="cont-left reveal">
+      <div class="cont-item">
+        <div class="cont-label">WhatsApp / Plantão</div>
+        <a href="tel:45999669028" class="cont-val" onclick="trackPhone('45999669028')">(45) 99966-9028</a>
+        <div class="cont-sub">Atendimento rápido, 7 dias por semana</div>
+      </div>
+      <div class="cont-item">
+        <div class="cont-label">Telefone Fixo</div>
+        <a href="tel:+554532261956" class="cont-val" onclick="trackPhone('554532261956')">(45) 3226-1956</a>
+        <div class="cont-sub">Escritório / Comercial</div>
+      </div>
+      <div class="cont-item">
+        <div class="cont-label">Localização</div>
+        <span class="cont-val" style="cursor:default">Cascavel, Paraná</span>
+        <div class="cont-sub">Atendemos todo o oeste paranaense</div>
+      </div>
+      <a href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Gostaria%20de%20un%20orçamento." class="wpp-big" target="_blank" rel="noopener" onclick="trackWhatsApp('contato_wpp_btn')">
+        <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Conversar no WhatsApp
+      </a>
+      <div class="qr-row">
+        <img src="https://metalurgicaunimetal.com.br/assets/img/QrCode.jpg" alt="QR Code WhatsApp">
+        <div class="qr-txt">Aponte a câmera do celular para o QR Code e inicie uma conversa <strong>diretamente pelo WhatsApp.</strong></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="form-box">
+        <div class="form-head">
+          <div class="form-head-title">Solicitar Orçamento</div>
+          <div class="form-head-sub">Preencha abaixo — entraremos em contato pelo WhatsApp.</div>
         </div>
-
-        <!-- institucional Section -->
-        <div class="container px-8 py-8" id="institucional">
-            <h3 class="text-3xl font-bold border-b border-gray-200 pb-4">
-                Institucional
-            </h3>
-            <div class="lg:w-1/3 md:w-1/2 mb-6">
-                <div
-                    class="fb-page"
-                    data-href="https://www.facebook.com/unimetal.com.br"
-                    data-tabs="timeline"
-                    data-height="347"
-                    data-small-header="true"
-                    data-adapt-container-width="true"
-                    data-hide-cover="true"
-                    data-show-facepile="true"
-                >
-                    <blockquote
-                        cite="https://www.facebook.com/unimetal.com.br"
-                        class="fb-xfbml-parse-ignore"
-                    >
-                        <a href="https://www.facebook.com/unimetal.com.br"
-                            >Metalurgica Unimetal</a
-                        >
-                    </blockquote>
-                </div>
-            </div>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="f-field"><label>Nome</label><input type="text" id="fn" placeholder="Seu nome"></div>
+            <div class="f-field"><label>WhatsApp</label><input type="tel" id="ft" placeholder="(45) 00000-0000"></div>
+          </div>
+          <div class="f-field">
+            <label>Serviço de Interesse</label>
+            <select id="fs">
+              <option value="" disabled selected>Selecione...</option>
+              <option>Porta de Enrolar Elétrica</option>
+              <option>Estrutura Metálica</option>
+              <option>Barracão</option>
+              <option>Mezanino</option>
+              <option>Garagem</option>
+            </select>
+          </div>
+          <div class="f-field"><label>Mensagem</label><textarea id="fm" rows="4" placeholder="Descreva seu projeto..."></textarea></div>
         </div>
-
-        <!-- End page content -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.4682322338739!2d-53.48476616399555!3d-24.951925655006324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6acdd036bb3%3A0x79f99ef4c6ca6460!2sMetal%C3%BArgica%20Unimetal!5e0!3m2!1sen!2sbr!4v1698206031788!5m2!1sen!2sbr"
-            class="w-full h-[450px] border-0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-
-        <!-- Footer -->
-        <footer class="text-center bg-black py-4" id="contato">
-            <div>
-                <img
-                    src="assets/img/QrCode.jpg"
-                    alt="Coberturas metálicas"
-                    class="w-1/8 mx-auto"
-                />
-            </div>
-            <p class="text-gray-300">
-                ESCRITÓRIO / PLANTÃO
-                <a href="tel:45999669028" class="hover:text-white"
-                    >(45)99966-9028</a
-                >
-            </p>
-            <p class="text-gray-300">
-                FIXO
-                <a href="tel:+554532261956" class="hover:text-white"
-                    >(45)3226-1956</a
-                >
-            </p>
-        </footer>
-
-        <!-- MODAL -->
-        <div
-            id="modal_whatsapp"
-            class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden"
-        >
-            <div class="bg-transparent max-w-sm mx-auto mt-20 w-11/12">
-                <div class="p-2 relative">
-                    <span
-                        onclick="document.getElementById('modal_whatsapp').style.display='none'"
-                        class="absolute top-0 right-0 p-2 cursor-pointer text-white hover:text-gray-200 bg-gray-800 rounded-full w-8 h-8 flex items-center justify-center"
-                        >&times;</span
-                    >
-                </div>
-                <a
-                    id="track_campain"
-                    target="_blank"
-                    href="https://api.whatsapp.com/send?phone=5545999669028&text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site.+Gostaria+de+fazer+um+or%C3%A7amento"
-                >
-                    <img
-                        src="./assets/img/banner_wpp.png"
-                        srcset="
-                            ./assets/img/banner_wpp@2x.png 2x,
-                            ./assets/img/banner_wpp@3x.png 3x
-                        "
-                        class="w-full"
-                        alt="WhatsApp Banner"
-                    />
-                </a>
-            </div>
+        <div class="f-submit">
+          <button class="submit-btn" onclick="enviar()">Enviar pelo WhatsApp</button>
         </div>
-        <script>
-            document
-                .querySelector(".mobile-menu-button")
-                .addEventListener("click", function () {
-                    document
-                        .querySelector(".mobile-menu")
-                        .classList.toggle("hidden");
-                });
-        </script>
-        <script>
-            // Functions
-            function handleClick(event) {
-                window.location.href =
-                    "https://metalurgicaunimetal.com.br#track_campain_wpp";
-            }
-
-            // Triggers
-            const track_campain_wpp = document.getElementById("track_campain");
-            const whatsapp_modal = document.getElementById("modal_whatsapp");
-
-            // Actions
-            track_campain_wpp.addEventListener("click", handleClick);
-            whatsapp_modal.style.display = "block";
-        </script>
-    </body>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="ft-grid">
+    <a href="#" class="ft-logo">
+      <img src="https://metalurgicaunimetal.com.br/assets/img/logo.png" alt="Unimetal">
+      <div class="ft-logo-txt">UNI<span>METAL</span></div>
+    </a>
+    <ul class="ft-links">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copy">© 2025 Metalúrgica Unimetal. Todos os direitos reservados.</p>
+    <p class="ft-copy" style="opacity:.45">Cascavel, PR</p>
+  </div>
+</footer>
+<a class="float-wpp" href="https://api.whatsapp.com/send?phone=5545999669028&text=Olá!%20Vi%20o%20site%20e%20quero%20un%20orçamento." target="_blank" rel="noopener" onclick="trackWhatsApp('float')" aria-label="WhatsApp">
+  <svg width="21" height="21" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.125 1.534 5.858L.058 23.942l6.25-1.498A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.884 0-3.64-.51-5.144-1.395l-.37-.219-3.718.892.947-3.634-.245-.385A10.003 10.003 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  Orçamento rápido
+</a>
+<script>
+const hbg = document.getElementById('hbg');
+const nav = document.getElementById('navLinks');
+hbg.addEventListener('click', () => { hbg.classList.toggle('open'); nav.classList.toggle('open'); });
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hbg.classList.remove('open'); nav.classList.remove('open'); }));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+}, { threshold: 0.11, rootMargin: '0px 0px -36px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+let contTracked = false;
+const contSec = document.getElementById('contato');
+new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting && !contTracked) {
+      contTracked = true;
+      if (typeof trackReachContact === 'function') trackReachContact();
+    }
+  });
+}, { threshold: 0.25 }).observe(contSec);
+let s50 = false;
+window.addEventListener('scroll', () => {
+  const p = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  if (p >= 50 && !s50) {
+    s50 = true;
+    if (typeof gtag !== 'undefined') gtag('event', 'scroll', { event_category: 'engajamento', event_label: 'scroll_50pct', value: 50 });
+  }
+}, { passive: true });
+[[1],[2]].forEach(([n]) => {
+  const vid = document.getElementById('v'+n);
+  const ov  = document.getElementById('o'+n);
+  const wr  = document.getElementById('w'+n);
+  const lbl = ['portao_enrolar','grade_protecao'][n-1];
+  if (!vid) return;
+  ov.addEventListener('click', () => { vid.play(); wr.classList.add('playing'); if (typeof trackVideo === 'function') trackVideo(lbl); });
+  vid.addEventListener('click', () => { if (vid.paused) { vid.play(); wr.classList.add('playing'); } else { vid.pause(); wr.classList.remove('playing'); } });
+});
+function enviar() {
+  const nome = document.getElementById('fn').value.trim();
+  const tel  = document.getElementById('ft').value.trim();
+  const serv = document.getElementById('fs').value;
+  const msg  = document.getElementById('fm').value.trim();
+  if (!nome && !tel) { alert('Informe seu nome ou WhatsApp para continuar.'); return; }
+  if (typeof trackFormSubmit === 'function') trackFormSubmit();
+  let txt = '👋 Olá! Gostaria de um orçamento.';
+  if (nome) txt += '\n\n*Nome:* ' + nome;
+  if (tel)  txt += '\n*WhatsApp:* ' + tel;
+  if (serv) txt += '\n*Serviço:* ' + serv;
+  if (msg)  txt += '\n*Mensagem:* ' + msg;
+  txt += '\n\n_(Via metalurgicaunimetal.com.br)_';
+  window.open('https://api.whatsapp.com/send?phone=5545999669028&text=' + encodeURIComponent(txt), '_blank');
+}
+const secs = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a[href^="#"]');
+new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navAs.forEach(a => a.style.color = a.getAttribute('href') === '#' + e.target.id ? 'var(--red)' : '');
+    }
+  });
+}, { threshold: 0.4 }).observe(document.documentElement);
+secs.forEach(s => new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) navAs.forEach(a => a.style.color = a.getAttribute('href') === '#' + e.target.id ? 'var(--red)' : ''); });
+}, { threshold: 0.4 }).observe(s));
+</script>
+</body>
 </html>
