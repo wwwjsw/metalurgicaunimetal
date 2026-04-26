@@ -24,16 +24,16 @@
     gtag('config', 'AW-1038295806');
 
     function trackWhatsApp(origem) {
-      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WHATSAPP' });
+      gtag('event', 'conversion', { 'send_to': 'AW-1038295806/ntDaCNiun6McEP7FjO8D' });
       gtag('event', 'contact',    { event_category: 'contato', event_label: origem || 'wpp' });
     }
     function trackPhone(num) {
-      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WHATSAPP' });
+      gtag('event', 'conversion', { 'send_to': 'AW-1038295806/ntDaCNiun6McEP7FjO8D' });
       gtag('event', 'contact',    { event_category: 'contato', event_label: 'phone_' + num });
     }
     function trackFormSubmit() {
       // Como o formulário redireciona pro WhatsApp, enviamos o mesmo evento de conversão
-      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WHATSAPP' });
+      gtag('event', 'conversion', { 'send_to': 'AW-1038295806/ntDaCNiun6McEP7FjO8D' });
       gtag('event', 'generate_lead', { event_category: 'lead', event_label: 'form_orcamento' });
     }
     function trackServico(nome, acao) {
@@ -43,7 +43,7 @@
       });
     }
     function trackReachContact() {
-      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_REACH_CONTACT' });
+      gtag('event', 'conversion', { 'send_to': 'AW-1038295806/ntDaCNiun6McEP7FjO8D' });
       gtag('event', 'begin_checkout', { event_category: 'intencao', event_label: 'chegou_contato' });
     }
     function trackVideo(nome) {
