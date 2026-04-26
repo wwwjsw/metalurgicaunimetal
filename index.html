@@ -24,38 +24,23 @@
     gtag('config', 'AW-1038295806');
 
     function trackWhatsApp(origem) {
-      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WPP', value: 5.0, currency: 'BRL' });
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WHATSAPP' });
       gtag('event', 'contact',    { event_category: 'contato', event_label: origem || 'wpp' });
     }
     function trackPhone(num) {
-      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_PHONE', value: 3.0, currency: 'BRL' });
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WHATSAPP' });
       gtag('event', 'contact',    { event_category: 'contato', event_label: 'phone_' + num });
     }
-    function trackFormSubmit(servico) {
-      gtag('event', 'conversion',    { send_to: 'AW-1038295806/LABEL_FORM', value: 15.0, currency: 'BRL' });
-      gtag('event', 'generate_lead', { event_category: 'lead', event_label: 'form_orcamento', value: 15.0, currency: 'BRL' });
-      
-      // Conversões específicas para campanhas focadas
-      if (servico === 'Mezanino') {
-        gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_CONV_MEZANINO' });
-      } else if (servico === 'Porta de Enrolar Elétrica') {
-        gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_CONV_PORTA_ENROLAR' });
-      }
+    function trackFormSubmit() {
+      // Como o formulário redireciona pro WhatsApp, enviamos o mesmo evento de conversão
+      gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_WHATSAPP' });
+      gtag('event', 'generate_lead', { event_category: 'lead', event_label: 'form_orcamento' });
     }
     function trackServico(nome, acao) {
       gtag('event', acao === 'click' ? 'select_item' : 'view_item', {
         event_category: 'servico', event_label: nome,
         items: [{ item_name: nome, item_category: 'metalurgia' }]
       });
-      
-      // Se clicou no card ou no link do footer do serviço
-      if (acao === 'click') {
-        if (nome === 'mezanino' || nome === 'footer_mezanino') {
-          gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_CONV_MEZANINO' });
-        } else if (nome === 'porta-enrolar-eletrica' || nome === 'footer_porta-enrolar') {
-          gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_CONV_PORTA_ENROLAR' });
-        }
-      }
     }
     function trackReachContact() {
       gtag('event', 'conversion', { send_to: 'AW-1038295806/LABEL_REACH_CONTACT' });
@@ -772,7 +757,7 @@ function enviar() {
   const serv = document.getElementById('fs').value;
   const msg  = document.getElementById('fm').value.trim();
   if (!nome && !tel) { alert('Informe seu nome ou WhatsApp para continuar.'); return; }
-  if (typeof trackFormSubmit === 'function') trackFormSubmit(serv);
+  if (typeof trackFormSubmit === 'function') trackFormSubmit();
   let txt = '👋 Olá! Gostaria de um orçamento.';
   if (nome) txt += '\n\n*Nome:* ' + nome;
   if (tel)  txt += '\n*WhatsApp:* ' + tel;
